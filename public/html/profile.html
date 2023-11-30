@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Profile</title>
+        <script src="https://cdn.tailwindcss.com"></script><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+        <style>
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+    
+            /* Styling for the mobile menu */
+            .mobile-menu {
+                display: none;
+            }
+    
+            @media (max-width: 767px) {
+                .nav-menu {
+                    display: none;
+                }
+    
+                .mobile-menu {
+                    display: block;
+                }
+    
+                .mobile-menu a {
+                    display: block;
+                    padding: 1rem;
+                    color: black;
+                    text-decoration: none;
+                    border-bottom: 1px solid #3455EB;
+                    font-weight: bold;
+                }
+    
+                .mobile-menu a:last-child {
+                    border-bottom: none;
+                }
+    
+                .mobile-menu-dropdown {
+                    display: none;
+                }
+    
+                .mobile-menu button {
+                    color: #3455EB;
+                    background: none;
+                    border: none;
+                    font-size: 1.5rem;
+                    cursor: pointer;
+                }
+    
+                .mobile-menu:hover .mobile-menu-dropdown {
+                    display: block;
+                }
+            }
+        </style>
+    </head>
+    <body class="">
+      <header>
+            <nav class=" p-4 shadow-xl">
+                  <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+          
+                      <div class="flex items-center mb-4 md:mb-0">
+                          <img src="../images/SD MUHAMMADIYAH.png" alt="SD Logo" class="w-16 mr-2">
+                          <p class=" text-lg font-semibold">SD Muhammadiyah Ambarawa</p>
+                      </div>
+          
+                      <!-- Desktop menu -->
+                      <ul class="max-sm:hidden nav-menu flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4">
+                          <li><a href="./home.html" class=" hover:text-gray-300 transition font-semibold">Home</a></li>
+                          <li><a href="./profile.html" class=" hover:text-gray-300 transition font-semibold">Profil</a></li>
+                          <li><a href="./fasilitas.html" class=" hover:text-gray-300 transition font-semibold">Fasilitas</a></li>
+                          <li><a href="./ekstrakulikuler.html" class=" hover:text-gray-300 transition font-semibold">Ekstrakurikuler</a></li>
+                          <li><a href="./publikasi.html" class=" hover:text-gray-300 transition font-semibold">Publikasi</a></li>
+                          <li><a href="./kontak.html" class=" hover:text-gray-300 transition font-semibold">Kontak</a></li>
+                          <li><a href="./ppdb.html" class=" hover:text-gray-300 transition font-semibold">PPDB</a></li>
+                      </ul>
+          
+                      <!-- Mobile menu -->
+                      <div class="mobile-menu">
+                        <button id="mobile-menu-btn">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                        <div class="mobile-menu-dropdown">
+                            <a href="./home.html" class=" block py-2">Home</a>
+                            <a href="./profile.html" class=" block py-2">Profil</a>
+                            <a href="./fasilitas.html" class=" block py-2">Fasilitas</a>
+                            <a href="./ekstrakulikuler.html" class=" block py-2">Ekstrakurikuler</a>
+                            <a href="./publikasi.html" class=" block py-2">Publikasi</a>
+                            <a href="./kontak.html" class=" block py-2">Kontak</a>
+                            <a href="./ppdb.html" class=" block py-2">PPDB</a>
+                        </div>
+                    </div>
+        
+                </div>
+            </nav>
+        
+            <!-- Rest of your content goes here -->
+        
+            
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script>
+                  $(document).ready(function () {
+                      $("#mobile-menu-btn").click(function (e) {
+                          e.preventDefault();
+                          $(".mobile-menu-dropdown").toggleClass("hidden");
+                      });
+              
+                      // Handle click on mobile menu links
+                      $(".mobile-menu-dropdown a").click(function (e) {
+                          e.preventDefault();
+                          $(".mobile-menu-dropdown").addClass("hidden");
+                          var targetPage = $(this).attr("href");
+                          if (targetPage !== "javascript:void(0)") {
+                              // Redirect to the selected page if it's not "javascript:void(0)"
+                              window.location.href = targetPage;
+                          }
+                      });
+                  });
+              </script>
+        
+        
+          
+          
+        </header>
+
+        <main>
+
+              <div class="flex justify-center items-center mt-14">
+                  <div class="grid grid-cols-1">
+                      <h1 class="text-4xl font-bold text-center">
+                          Kepala Sekolah & Wakil Kepala Sekolah
+                      </h1>
+      
+                      <div class="grid grid-cols-2 mt-12 mb-10">
+                          <div class="flex flex-col items-center">
+                              <div
+                                  class="w-52 h-64 bg-cover"
+                                  style="background-image: url('../images/foto1.png')"
+                              ></div>
+                              <h2 class="mt-2 text-lg font-semibold">
+                                  Francis Weber
+                              </h2>
+                              <p class="mt-2">Kepala Sekolah</p>
+                          </div>
+      
+                          <div class="flex flex-col items-center">
+                              <div
+                                  class="w-52 h-64 bg-zinc-950 bg-cover"
+                                  style="background-image: url('../images/foto1.png')"
+                              ></div>
+                              <h2 class="mt-2 text-lg font-semibold">
+                                  Francis Weber
+                              </h2>
+                              <p class="mt-2">Kepala Sekolah</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+      
+              <div class="bg-[#3455EB] pt-10 pb-36">
+                  <div class="mx-24 py-">
+      
+                        <h2 class="mt-5 text-xl font-semibold">PENDAHULUAN</h2>
+            
+                        <h2 class="mt-5 text-2xl font-bold">
+                            Selamat datang di Sekolah Dasar Muhammadiyah <br/> Ambarawa Pringsewu
+                            !
+                        </h2>
+            
+                        <p class="mt-5 mr-16 text-lg">
+                            Kami dengan bangga mempersembahkan SD Muhammadiyah Ambarawa ,
+                            berkomitmen untuk menyediakan pendidikan berkualitas yang
+                            mengintegrasikan keunggulan kurikulum nasional dengan
+                            nilai-nilai ke-AlHamidiyah-an, serta mengadaptasi metode
+                            Montessori dan kurikulum Cambridge. Sebagai sekolah islam
+                            unggulan dan modern, SD Muhammadiyah Ambawara telah memberikan
+                            dedikasi untuk membentuk generasi muda yang Cedas, Mandiri, dan
+                            Terampil.
+                        </p>
+            
+                        <p class="mt-5 mr-16 text-lg">
+                            Pengintegrasian Kurikulum Nasional dengan Nilai-Nilai
+                            Ke-AlHamidiyah-an (Santri KITAB): Kami percaya bahwa pendidikan
+                            harus berlandaskan pada fondasi Kurikulum Nasional yang kuat dan
+                            telah teruji. Namun, SD 1 Muhamadiyah Ambawara Pringsewu
+                            mengambil langkah lebih maju dengan mengintegrasikan nilai-nilai
+                            ke-AlHamidiyah-an ke dalam setiap aspek kurikulum kami. Dengan
+                            demikian, siswa kami akan terlatih untuk menjadi individu yang
+                            berkarakter komunikatif, inovatif, terbuka, argumentatif, dan
+                            berintegritas.
+                        </p>
+                  </div>
+              </div>
+      
+              <div class="mx-24 py-16 grid grid-cols-2">
+      
+                  <div>
+                        <h2 class="mt-5 text-xl font-semibold">VISI SEKOLAH</h2>
+                        <p class="text-xl mt-12 mr-28">"membentuk peserta didik yang memiliki landasan spiritual, emosional, intelektual yang berwawasan kebangsaan dan memiliki daya saing dalam menghadapi era globalisasi serta trampil dalam menghadapi kehidupan sehari-hari."
+                        </p>
+                  </div>
+      
+                  <img src="../images/1.jpg" alt="" class="mt-10 rounded-2xl">
+              </div>
+      
+              <div class="bg-[#3455EB]">
+      
+                  <div class="py-10 grid grid-cols-2 gap-10 ml-10">
+      
+                        <img src="../images/1.jpg" alt="" class="mt-10 rounded-2xl">
+            
+                        <div class="ml-5 ">
+                              <h2 class="mt-5 text-xl font-semibold">MISI SEKOLAH</h2>
+                              <p class="text-xl mt-12 mr-28">
+                                    <div class="text-lg">
+                                          1. Menyelenggarakan Pembelajaran Islami dalam pembentukan karakter.
+                                    </div>
+                                    <div class="text-lg">
+                                          2. Memfasilitasi Pembelajaran bernuansa STEAMMI yang menstimulasi Kecerdasan, Kemandirian, dan Keterampilan.
+                                    </div>
+                                    <div class="text-lg">
+                                          3. Mendorong kemampuan murid terampil membaca Al-quran.
+                                    </div>
+                                    <div class="text-lg">
+                                          4. Membiasakan cerdas literasi.
+                                    </div>
+                                    <div class="text-lg">
+                                          5. Meningkatkan profesionalitas Guru dan Tenaga Kependidikan secara terus menerus.
+                                    </div>
+                                    <div class="text-lg">
+                                          6. Menjalin hubungan kemitraan internal dan eksternal.
+                                    </div>
+                              </p>
+                        </div>
+                  </div>
+              </div>
+              
+              <div class="ml-10 py-10 bg-white  rounded-md shadow-md">
+      
+                  <h1 class="text-2xl font-semibold mb-4">Kurikulum Sekolah Dasar Islam Terpadu Al-Hamidiyah</h1>
+              
+                  <h2 class="text-xl font-semibold mb-2">1. Kurikulum Nasional</h2>
+                  <h2 class="text-xl font-semibold mb-2">2. Kurikulum Merdeka (Kelas 1, 2, 4, dan 5)</h2>
+                  <h2 class="text-xl font-semibold mb-2">3. Kurikulum 2013 (Kelas 3 dan 6)</h2>
+              
+                  <h2 class="text-xl font-semibold mt-4">Muatan Lokal</h2>
+                  <ul class="list-disc pl-6 mt-2">
+                    <li>Alquran (Metode Ummi)</li>
+                    <li>STEAMMI (Science, Technology, Engineering, Art, Mathematics, Montessori, and Islamics)</li>
+                    <li>Integrasi Nilai-nilai Ke-Alhamidiyahan & Pembentukan Karakter Santri Kitab (Komunikatif, Inovatif, Terbuka, Argumentatif, dan Berintegritas)</li>
+                  </ul>
+              
+                  <h2 class="text-xl font-semibold mt-4">Adaptasi Montessori</h2>
+                  <p class="mt-2">Adaptasi Montessori pada beberapa pelajaran seperti Matematika, Bahasa, dan EPL (Exercises for Practical Life).</p>
+              
+                </div>
+        </main>
+
+        <footer class="bg-gray-900 text-white text-center py-8">
+            <div class="container mx-auto">
+                <img src="../images/SD MUHAMMADIYAH.png" alt="logo sd muhammadiyah" class="w-16 mb-4 mx-auto">
+                <h3 class="text-lg font-semibold">SD Muhammadiyah Ambarawa</h3>
+                <p class="mb-4">
+                    Jl. Hm. Ghardi No. 29 Ambarawa, 
+                    Ambarawa, Kec. Ambarawa, 
+                    Kab. Pringsewu Prov. Lampung
+                </p>
+                
+                <ul class="flex justify-center space-x-4">
+                    <li><a href="#" target="_blank" class="text-white"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#" target="_blank" class="text-white"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#" target="_blank" class="text-white"><i class="fab fa-instagram"></i></a></li>
+                    <!-- Tambahkan ikon media sosial lainnya sesuai kebutuhan -->
+                </ul>
+    
+                <p class="mt-4 text-sm">&copy; 2023 SD Muhammadiyah Ambarawa</p>
+            </div>
+        </footer>
+    
+        <!-- Tambahkan script untuk Font Awesome jika belum ada -->
+        <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+
+    </body>
+</html>

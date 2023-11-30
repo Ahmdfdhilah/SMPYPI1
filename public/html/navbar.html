@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* Styling for the mobile menu */
+        .mobile-menu {
+            display: none;
+        }
+
+        @media (max-width: 767px) {
+            .nav-menu {
+                display: none;
+            }
+
+            .mobile-menu {
+                display: block;
+            }
+
+            .mobile-menu a {
+                display: block;
+                padding: 1rem;
+                color: black;
+                text-decoration: none;
+                border-bottom: 1px solid #3455EB;
+                font-weight: bold;
+            }
+
+            .mobile-menu a:last-child {
+                border-bottom: none;
+            }
+
+            .mobile-menu-dropdown {
+                display: none;
+            }
+
+            .mobile-menu button {
+                color: #3455EB;
+                background: none;
+                border: none;
+                font-size: 1.5rem;
+                cursor: pointer;
+            }
+
+            .mobile-menu:hover .mobile-menu-dropdown {
+                display: block;
+            }
+        }
+    </style>
+    <title>SD Muhammadiyah Ambarawa</title>
+</head>
+<body class="bg-gray-100">
+
+    <nav class="bg-slate-300 p-4 shadow-md">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+
+            <div class="flex items-center mb-4 md:mb-0">
+                <img src="../images/SD MUHAMMADIYAH.png" alt="SD Logo" class="w-16 mr-2">
+                <p class=" text-lg font-semibold">SD Muhammadiyah Ambarawa</p>
+            </div>
+
+            <!-- Desktop menu -->
+            <ul class="nav-menu flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4">
+                <li><a href="#" class=" hover:text-gray-300 transition font-semibold">Home</a></li>
+                <li><a href="#" class=" hover:text-gray-300 transition font-semibold">Profil</a></li>
+                <li><a href="#" class=" hover:text-gray-300 transition font-semibold">Fasilitas</a></li>
+                <li><a href="#" class=" hover:text-gray-300 transition font-semibold">Ekstrakurikuler</a></li>
+                <li><a href="#" class=" hover:text-gray-300 transition font-semibold">Publikasi</a></li>
+                <li><a href="#" class=" hover:text-gray-300 transition font-semibold">Kontak</a></li>
+                <li><a href="#" class=" hover:text-gray-300 transition font-semibold">PPDB</a></li>
+            </ul>
+
+            <!-- Mobile menu -->
+            <div class="mobile-menu">
+                <button id="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="mobile-menu-dropdown">
+                    <a href="#" class=" block py-2">Home</a>
+                    <a href="#" class=" block py-2">Profil</a>
+                    <a href="#" class=" block py-2">Fasilitas</a>
+                    <a href="#" class=" block py-2">Ekstrakurikuler</a>
+                    <a href="#" class=" block py-2">Publikasi</a>
+                    <a href="#" class=" block py-2">Kontak</a>
+                    <a href="#" class=" block py-2">PPDB</a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Rest of your content goes here -->
+
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // JavaScript to toggle mobile menu
+        $(document).ready(function () {
+            $("#mobile-menu-btn").click(function () {
+                $(".mobile-menu-dropdown").toggleClass("hidden");
+            });
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+        
+        <style>
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+    
+            /* Styling for the mobile menu */
+            .mobile-menu {
+                display: none;
+            }
+    
+            @media (max-width: 767px) {
+                .nav-menu {
+                    display: none;
+                }
+    
+                .mobile-menu {
+                    display: block;
+                }
+    
+                .mobile-menu a {
+                    display: block;
+                    padding: 1rem;
+                    color: black;
+                    text-decoration: none;
+                    border-bottom: 1px solid #3455EB;
+                    font-weight: bold;
+                }
+    
+                .mobile-menu a:last-child {
+                    border-bottom: none;
+                }
+    
+                .mobile-menu-dropdown {
+                    display: none;
+                }
+    
+                .mobile-menu button {
+                    color: #3455EB;
+                    background: none;
+                    border: none;
+                    font-size: 1.5rem;
+                    cursor: pointer;
+                }
+    
+                .mobile-menu:hover .mobile-menu-dropdown {
+                    display: block;
+                }
+            }
+        </style>
+    </head>
+    <body class="">
+        <header>
+            <nav class=" p-4 shadow-xl">
+                  <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+          
+                      <div class="flex items-center mb-4 md:mb-0">
+                          <img src="../images/SD MUHAMMADIYAH.png" alt="SD Logo" class="w-16 mr-2">
+                          <p class=" text-lg font-semibold">SD Muhammadiyah Ambarawa</p>
+                      </div>
+          
+                      <!-- Desktop menu -->
+                      <ul class="max-sm:hidden nav-menu flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4">
+                          <li><a href="./home.html" class=" hover:text-gray-300 transition font-semibold">Home</a></li>
+                          <li><a href="./profile.html" class=" hover:text-gray-300 transition font-semibold">Profil</a></li>
+                          <li><a href="./fasilitas.html" class=" hover:text-gray-300 transition font-semibold">Fasilitas</a></li>
+                          <li><a href="./ekstrakulikuler.html" class=" hover:text-gray-300 transition font-semibold">Ekstrakurikuler</a></li>
+                          <li><a href="./publikasi.html" class=" hover:text-gray-300 transition font-semibold">Publikasi</a></li>
+                          <li><a href="./kontak.html" class=" hover:text-gray-300 transition font-semibold">Kontak</a></li>
+                          <li><a href="./ppdb.html" class=" hover:text-gray-300 transition font-semibold">PPDB</a></li>
+                      </ul>
+          
+                      <!-- Mobile menu -->
+                      <div class="mobile-menu">
+                          <button id="mobile-menu-btn">
+                              <i class="fas fa-bars"></i>
+                          </button>
+                          <div class="mobile-menu-dropdown">
+                              <a href="./home.html" class=" block py-2">Home</a>
+                              <a href="./profile.html" class=" block py-2">Profil</a>
+                              <a href="./fasilitas.html" class=" block py-2">Fasilitas</a>
+                              <a href="./ekstrakulikuler.html" class=" block py-2">Ekstrakurikuler</a>
+                              <a href="./publikasi.html" class=" block py-2">Publikasi</a>
+                              <a href="./kontak.html" class=" block py-2">Kontak</a>
+                              <a href="./ppdb.html" class=" block py-2">PPDB</a>
+                          </div>
+                      </div>
+          
+                  </div>
+              </nav>
+          
+              <!-- Rest of your content goes here -->
+          
+              
+              <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+              <script>
+                  $(document).ready(function () {
+                      $("#mobile-menu-btn").click(function (e) {
+                          e.preventDefault();
+                          $(".mobile-menu-dropdown").toggleClass("hidden");
+                      });
+              
+                      // Handle click on mobile menu links
+                      $(".mobile-menu-dropdown a").click(function (e) {
+                          e.preventDefault();
+                          $(".mobile-menu-dropdown").addClass("hidden");
+                          var targetPage = $(this).attr("href");
+                          if (targetPage !== "javascript:void(0)") {
+                              // Redirect to the selected page if it's not "javascript:void(0)"
+                              window.location.href = targetPage;
+                          }
+                      });
+                  });
+              </script>
+          
+          
+        </header>
+
+        <main>
+            <div
+                class="w-full h-60 lg:h-[33rem] bg-cover bg-center p-8 sm:p-16 md:p-24 "
+                style="background-image: url(../images/1.jpg)"
+            >
+                    <h1 class=" text-white bg-slate-600 bg-opacity-30 max-sm:text-center max-sm:text-3xl md:text-7xl font-semibold text-start sm:pr-16 md:pr-96">
+                        Selamat Datang di SD Muhammadiyah Ambarawa
+                    </h1>
+            </div>
+
+            <div class="mx-8 sm:mx-16 md:mx-24 my-8 sm:my-16 md:my-32 grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+                <div class="md:col-span-2 pr-4 md:pr-24">
+                    <h3>PROFIL KAMI</h3>
+
+                    <h1 class="mt-4 text-2xl sm:text-3xl md:text-5xl font-bold">
+                        Sekolah Dasar Muhamadiyah Ambarawa Pringsewu
+                    </h1>
+                    <p class="mt-3 text-sm sm:text-base">
+                        SD Muhammadiyah Ambarawa adalah sekolah islam unggulan
+                        di pringsewu yang menyelenggarakan Pendidikan Islam
+                        terpadu, dengan mengintegrasikan Kurikulum Nasional,
+                        Muatan Lokal (Nilai-Nilai ke-AlHamidiyah-an).
+                        Mengadaptasi Metode Montessori dan Kurikulum Cambridge.
+                        Pembelajaran menyenangkan menjadi ciri khas SD
+                        Muhammadiyah melalui implementasi Metode Pembelajaran
+                        STEAMMI yang merupakan integrasi ilmu Science,
+                        Technology, Engineering, Math, Montessori, Islamic.
+                        Metode SľEAMMI menstimulasi murid untuk berpikir kritis,
+                        inovatif, kreatif, kolaboratif, komunikatif dan mampu
+                        memecahkan masalah yang merupakan ciri dari kompetensi
+                        abad 21. Serta membentuk siswa dengan nilai-nilai Santri
+                        KITAB (Komunikatif, Inovatif, Terbuka, Argumentatif,
+                        Berintegritas) menjadikan pondasi dalam pembentukan
+                        karakter Insan Muslim yang Cerdas, Mandiri, dan Terampil
+                        (CERMAT).
+                    </p>
+
+                    <button
+                        src=""
+                        class="mt-5 bg-[#3455EB] px-4 sm:px-8 py-2 sm:py-4 rounded-md text-white"
+                    >
+                        Selengkapnya
+                    </button>
+                </div>
+
+                <div class="items-center w-full md:w-96">
+                    <img src="../images/sekolah.JPG" alt="" class="" />
+                </div>
+            </div>
+
+            <div class="bg-[#3455EB]">
+                  <div class="mx-4 md:mx-10 grid grid-rows-1 ">
+                      <h3 class="mt-4 md:mt-11 text-lg md:text-xl">Fasilitas Sekolah</h3>
+                      <h1 class="mt-2 md:mt-28 text-2xl md:text-5xl font-bold pr-4 md:pr-96">Fasilitas Sekolah Dasar Muhamadiyah Ambarawa</h1>
+              
+                      <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-3 mt-4 lg:mt-14 pb-10 lg:pb-20">
+                        <div class="relative w-full lg:w-96 h-[20rem] lg:h-[25rem] rounded-xl " style="background-image: url(../images/1.jpg)">
+                              <div class="absolute bottom-0 bg-slate-600 bg-opacity-30 rounded-xl left-0 my-8 lg:my-14 mx-4 lg:mx-5">
+                                  <h2 class="text-xl lg:text-xl text-white font-semibold mb-2 lg:mb-5">Ruang Guru</h2>
+                                  <p class="text-sm lg:text-base mb-16 lg:mb-32 text-white">SD Muhammadiyah memiliki ruang guru untuk memfasilitasi guru-guru.</p>
+                                  <button class="bg-[#3455EB] lg:py-3 px-4 lg:px-5 rounded-lg mt-2 lg:mt-5">
+                                      <a href="" class="font-medium text-white">Selengkapnya</a>
+                                  </button>
+                              </div>
+                          </div>
+              
+                          <div class="relative w-full lg:w-96 h-[20rem] lg:h-[25rem] rounded-xl bg-black lg:bg-gray-500" style="background-image: url(../images/1.jpg)">
+                              <div class="absolute bottom-0 bg-slate-600 bg-opacity-30 rounded-xl left-0 my-8 lg:my-14 mx-4 lg:mx-5">
+                                  <h2 class="text-xl md:text-xl text-white font-semibold mb-2 lg:mb-5">Perpustakaan</h2>
+                                  <p class="text-sm lg:text-base mb-16 lg:mb-32 text-white">SD Muhammadiyah memiliki perpustakaan untuk memfasilitasi guru dan murid.</p>
+                                  <button class="bg-[#3455EB] py-2 lg:py-3 px-4 lg:px-5 rounded-lg mt-2 lg:mt-5">
+                                      <a href="" class="font-medium text-white">Selengkapnya</a>
+                                  </button>
+                              </div>
+                          </div>
+              
+                          <div class="relative w-full lg:w-96 h-[20rem] lg:h-[25rem] rounded-xl bg-black lg:bg-gray-500" style="background-image: url(../images/1.jpg)">
+                              <div class="absolute bottom-0 bg-slate-600 bg-opacity-30 rounded-xl left-0 my-8 lg:my-14 mx-4 lg:mx-5">
+                                  <h2 class="text-xl lg:text-xl text-white font-semibold mb-2 lg:mb-5">Ruang UKS</h2>
+                                  <p class="text-sm lg:text-base mb-16 lg:mb-36 text-white">SD Muhammadiyah memiliki Ruang UKS.</p>
+                                  <button class="bg-[#3455EB] py-2 lg:py-3 px-4 md:px-5 rounded-md mt-2 md:mt-5">
+                                      <a href="" class="font-medium text-white">Selengkapnya</a>
+                                  </button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+           
+                  <div class="mx-4 md:mx-10 grid grid-rows-1">
+                      <h3 class="mt-4 md:mt-11 text-lg md:text-xl">Berita Sekolah</h3>
+                      <h1 class="mt-2 md:mt-28 text-2xl md:text-5xl font-bold pr-4 md:pr-96">Berita Sekolah Dasar
+                        Muhammadiyah Ambarawa</h1>
+              
+                      <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-3 mt-4 lg:mt-14 pb-10 lg:pb-20">
+                        <div class="relative w-full lg:w-96 h-[20rem] lg:h-[25rem] rounded-xl " style="background-image: url(../images/1.jpg)">
+                              <div class="absolute bottom-0 bg-slate-600 bg-opacity-30 rounded-xl left-0 my-8 lg:my-14 mx-4 lg:mx-5">
+                                  <h2 class="text-xl lg:text-xl text-white font-semibold mb-2 lg:mb-5">SD Muhammadiyah BERLITERASI</h2>
+                                  <p class="text-sm lg:text-base mb-16  text-white">Bulan Oktober identik dengan peringatan Bulan Bahasa dan Sastra karena bertepatan dengan dikukuhkannya Bahasa Indonesia sebagai bahasa nasional."</p>
+                                  <button class="bg-[#3455EB] py-2 lg:py-3 px-4 lg:px-5 rounded-lg mt-2 lg:mt-5">
+                                      <a href="" class="font-medium text-white">Selengkapnya</a>
+                                  </button>
+                              </div>
+                          </div>
+              
+                          <div class="relative w-full lg:w-96 h-[20rem] lg:h-[25rem] rounded-xl bg-black lg:bg-gray-500" style="background-image: url(../images/1.jpg)">
+                              <div class="absolute bottom-0 bg-slate-600 bg-opacity-30 rounded-xl left-0 my-8 lg:my-14 mx-4 lg:mx-5">
+                                  <h2 class="text-xl md:text-xl text-white font-semibold mb-2 lg:mb-5">Inovasi di Era Digital, SD 1 Muhamadiyah Menggunakan Sistem Computer Based Test (CBT)</h2>
+                                  <p class="text-sm lg:text-base mb-16 lg:mb-32 text-white"></p>
+                                  <button class="bg-[#3455EB] py-2 lg:py-3 px-4 lg:px-5 rounded-lg mt-2 lg:mt-5">
+                                      <a href="" class="font-medium text-white">Selengkapnya</a>
+                                  </button>
+                              </div>
+                          </div>
+              
+                          <div class="relative w-full lg:w-96 h-[20rem] lg:h-[25rem] rounded-xl bg-black lg:bg-gray-500" style="background-image: url(../images/1.jpg)">
+                              <div class="absolute bottom-0 bg-slate-600 bg-opacity-30 rounded-xl left-0 my-8 lg:my-14 mx-4 lg:mx-5">
+                                  <h2 class="text-xl lg:text-xl text-white font-semibold mb-2 lg:mb-5">SD Muhammadiyah Gelar Pelatihan Literasi dan Numerasi Untuk Seluruh Guru
+                              </h2>
+                                  <p class="text-sm lg:text-base mb-16 lg:mb-36 text-white"></p>
+                                  <button class="bg-[#3455EB] py-2 lg:py-3 px-4 md:px-5 rounded-md mt-2 md:mt-5">
+                                      <a href="" class="font-medium text-white">Selengkapnya</a>
+                                  </button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            <div class="bg-[#3455EB]">
+                  <div class="mx-4 md:mx-10 grid grid-rows-1">
+                      <h3 class="mt-4 md:mt-11 text-lg md:text-xl">Prestasi Sekolah</h3>
+                      <h1 class="mt-2 md:mt-28 text-2xl md:text-5xl font-bold pr-4 md:pr-96">Prestasi Sekolah Dasar Muhamadiyah Ambarawa</h1>
+              
+                      <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-3 mt-4 lg:mt-14 pb-10 lg:pb-20">
+                        <div class="relative w-full lg:w-96 h-[20rem] lg:h-[25rem] rounded-xl " style="background-image: url(../images/1.jpg)">
+                              <div class="absolute bottom-0 bg-slate-600 bg-opacity-30 rounded-xl left-0 my-8 lg:my-14 mx-4 lg:mx-5">
+                                  <h2 class="text-xl lg:text-xl text-white font-semibold mb-2 lg:mb-5">SD Muhammadiyah Menjadi Juara</h2>
+                                  <p class="text-sm lg:text-base mb-16 lg:mb-28 text-white">SD Muhammadiyah Ambarawa menjadi juara 1 dalam pertandingan silat yang dilakukan GOR Ambarawa</p>
+                                  <button class="bg-[#3455EB] py-2 lg:py-3 px-4 lg:px-5 rounded-lg mt-2 lg:mt-5">
+                                      <a href="" class="font-medium text-white">Selengkapnya</a>
+                                  </button>
+                              </div>
+                          </div>
+              
+                          <div class="relative w-full lg:w-96 h-[20rem] lg:h-[25rem] rounded-xl bg-black lg:bg-gray-500" style="background-image: url(../images/1.jpg)">
+                              <div class="absolute bottom-0 bg-slate-600 bg-opacity-30 rounded-xl left-0 my-8 lg:my-14 mx-4 lg:mx-5">
+                                  <h2 class="text-xl md:text-xl text-white font-semibold mb-2 lg:mb-5">SD 1 Muhammadiyah Ambarawa menjadi juara dalam lomba OSN</h2>
+                                  <p class="text-sm lg:text-base mb-16 lg:mb-28 text-white"></p>
+                                  <button class="bg-[#3455EB] py-2 lg:py-3 px-4 lg:px-5 rounded-lg mt-2 lg:mt-5">
+                                      <a href="" class="font-medium text-white">Selengkapnya</a>
+                                  </button>
+                              </div>
+                          </div>
+              
+                          <div class="relative w-full lg:w-96 h-[20rem] lg:h-[25rem] rounded-xl bg-black lg:bg-gray-500" style="background-image: url(../images/1.jpg)">
+                              <div class="absolute bottom-0 bg-slate-600 bg-opacity-30 rounded-xl left-0 my-8 lg:my-14 mx-4 lg:mx-5">
+                                  <h2 class="text-xl lg:text-xl text-white font-semibold mb-2 lg:mb-5">SD 1 Muhammadiyah Ambarawa menjadi sekolah terbesih di desa Ambarawa
+                              </h2>
+                                
+                                  <button class="mt-7 px-8 py-4 rounded-md bg-blue-500 text-white transition duration-300 ease-in-out transform hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300">
+                                    Selengkapnya
+                                </button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              
+            
+            </main>
+
+            <footer class="bg-gray-900 text-white text-center py-8">
+                  <div class="container mx-auto">
+                      <img src="../images/SD MUHAMMADIYAH.png" alt="logo sd muhammadiyah" class="w-16 mb-4 mx-auto">
+                      <h3 class="text-lg font-semibold">SD Muhammadiyah Ambarawa</h3>
+                      <p class="mb-4">
+                          Jl. Hm. Ghardi No. 29 Ambarawa, 
+                          Ambarawa, Kec. Ambarawa, 
+                          Kab. Pringsewu Prov. Lampung
+                      </p>
+                      
+                      <ul class="flex justify-center space-x-4">
+                          <li><a href="#" target="_blank" class="text-white"><i class="fab fa-facebook"></i></a></li>
+                          <li><a href="#" target="_blank" class="text-white"><i class="fab fa-twitter"></i></a></li>
+                          <li><a href="#" target="_blank" class="text-white"><i class="fab fa-instagram"></i></a></li>
+                          <!-- Tambahkan ikon media sosial lainnya sesuai kebutuhan -->
+                      </ul>
+          
+                      <p class="mt-4 text-sm">&copy; 2023 SD Muhammadiyah Ambarawa</p>
+                  </div>
+              </footer>
+          
+              <!-- Tambahkan script untuk Font Awesome jika belum ada -->
+       
+    </body>
+</html>
