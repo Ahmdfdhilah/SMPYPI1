@@ -11,10 +11,7 @@
                 <div class="items-center flex flex-wrap">
                     <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
                         <div class="lg:pr-12">
-                            <h1 class="text-white font-bold text-3xl lg:text-5xl">
-                                Selamat Datang di Website <br>
-                                SMP YPI 1 Braja Selebah
-                            </h1>
+                            <div id="typing-text" class="text-white text-4xl font-bold text-center mt-10"></div>
                         </div>
                     </div>
                 </div>
@@ -24,7 +21,7 @@
         <section class="pb-20 -mt-24">
             <div class="container mx-auto px-4">
                 <div class="flex flex-wrap">
-                    <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
+                    <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center guru-card">
                         <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                             <div class="px-4 py-5 flex-auto">
                                 <div class="mx-auto w-fit justify-center">
@@ -41,7 +38,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="w-full md:w-4/12 px-6 text-center">
+                    <div class="w-full md:w-4/12 px-6 text-center siswa-card">
                         <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                             <div class="px-4 py-5 flex-auto">
                                 <div class="mx-auto w-fit justify-center">
@@ -59,7 +56,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
+                    <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center kelas-card">
                         <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                             <div class="px-4 py-5 flex-auto">
                                 <div class="mx-auto w-fit justify-center">
@@ -121,8 +118,7 @@
                     <div class="m-auto pl-2 text-xl mb-2 border-s-4 border-[#FFAC00]">Pengumuman</div>
                     <div class="w-full container mx-auto flex flex-col gap-4 lg:gap-12 lg:flex-row">
                         @foreach ($pengumuman as $publication)
-                            <!-- Frame -->
-                            <div class="w-full border border-gray-300 rounded">
+                            <div class="w-full border border-gray-300 rounded publication">
                                 <img src="/image/{{ $publication->publication_img }}"
                                     class="object-cover mb-4 w-full h-48" alt="Image">
                                 <div class="p-2">
@@ -146,7 +142,7 @@
                     </div>
                     <div class="w-full container mx-auto flex flex-col gap-4 lg:gap-12 lg:flex-row pb-24">
                         @foreach ($blog as $publication)
-                            <div class="w-full border-2 border-gray-300 rounded-xl">
+                            <div class="w-full border-2 border-gray-300 rounded-xl publication">
                                 <img src="/image/{{ $publication->publication_img }}"
                                     class="object-cover mb-4 w-full h-48" alt="Image">
                                 <div class="p-2">
@@ -170,7 +166,7 @@
                 class="flex flex-col-reverse lg:flex-row justify-between  rounded relative mb-48">
                 <div class="w-full sm:w-4/5">
                     <div class="m-auto pl-2 text-xl mb-2 border-s-4 border-[#FFAC00]">Kepala Sekolah</div>
-                    <div class="bg-white">
+                    <div class="bg-white dark:bg-gray-900">
                         <div class="container px-6 py-10 mx-auto">
                             <div class="lg:-mx-6 lg:flex lg:items-center">
                                 <img class="object-cover object-center lg:w-[24rem] lg:mx-6 w-64 h-64 rounded-full lg:h-[24rem]"
@@ -183,7 +179,7 @@
                                         Sambutan Kepala Sekolah
                                     </h1>
 
-                                    <div class="max-w-lg mt-6 text-gray-500 " >
+                                    <div class="max-w-lg mt-6 text-gray-500">
                                         <p class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">
                                             Semoga dengan terus dikembangkannya website sekolah ini dapat menjadi wahana
                                             sumber
@@ -214,4 +210,37 @@
         </section>
 
     </main>
+    <script>
+        const typingText = document.getElementById('typing-text');
+      
+        const textToType = "Selamat Datang di Website <br> SMP YPI 1 Braja Selebah";
+
+        anime.timeline({ loop: false })
+          .add({
+            targets: '#typing-text',
+            innerHTML: [0, textToType.length], 
+            easing: 'linear',
+            round: 1,
+            duration: textToType.length * 100, 
+            update: function () {
+              typingText.innerHTML = textToType.substring(0, Math.round(typingText.innerHTML));
+            }
+          });
+      </script>
+      <script>
+        function animateCard(selector, delay) {
+          anime({
+            targets: selector,
+            translateY: [100, 0],
+            opacity: [0, 1], 
+            easing: 'easeInOutQuad',
+            duration: 500,
+            delay: delay 
+          });
+        }
+    
+        animateCard('.guru-card', 500);
+        animateCard('.siswa-card', 300);
+        animateCard('.kelas-card', 500);
+      </script>
 @endsection
