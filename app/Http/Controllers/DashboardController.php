@@ -2,12 +2,28 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Models\Employees;
+use App\Models\News;
+use App\Models\Achievement;
+use App\Models\Extracurricular;
+use App\Models\Facility;
+use App\Models\Scholarships;
+use App\Models\Students;
 
 class DashboardController extends Controller
 {
     public function index()
     {
-        return view('dashboard');
+        $data = [
+            'newsCount' => News::count(),
+            'achievementsCount' => Achievement::count(),
+            'extracurricularsCount' => Extracurricular::count(),
+            'facilitiesCount' => Facility::count(),
+            'scholarshipsCount' => Scholarships::count(),
+            'studentsCount' => Students::count(),
+            'employeesCount' => Employees::count(),
+        ];
+
+        return view('dashboard', $data);
     }
 }

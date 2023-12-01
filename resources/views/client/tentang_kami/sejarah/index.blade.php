@@ -11,7 +11,7 @@
         <div class="gap-10">
             <div data-aos="fade-up"  class="m-auto pl-2 text-xl mb-2 border-s-4 border-[#FFAC00] ">Sejarah Sekolah</div>
             <div data-aos="fade-up"  class="p-4">
-                <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+                <p class="mb-4 text-base font-normal text-gray-500">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolorum consectetur, placeat nobis,
                     numquam
                     doloribus, facere dignissimos perspiciatis harum dolor cumque! Omnis doloremque ratione hic aut culpa
@@ -37,7 +37,7 @@
                     pariatur mollitia numquam vitae incidunt nostrum dolores earum repellendus quisquam provident! Tempora
                     deserunt
                 </p>
-                <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+                <p class="mb-4 text-base font-normal text-gray-500">
                     fugit non eius.
                     Sed optio dolore pariatur a dolorem voluptatem earum nulla, eius harum. Molestiae explicabo magni
                     eveniet
@@ -61,20 +61,20 @@
             </div>
             <div data-aos="fade-up" class="m-auto pl-2 text-xl mb-2 border-s-4 border-[#FFAC00] ">Sejarah Kepala Sekolah</div>
             <div data-aos="fade-up" class="py-8 lg:px-16">
-                <ol class="relative border-s border-gray-200 dark:border-gray-700">
+                <ol class="relative border-s border-gray-200">
                     <li class="mb-10 ms-6">
                         <span
-                            class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+                            class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white">
                             <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                                 <path
                                     d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
                             </svg>
                         </span>
-                        <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">Bapak
+                        <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 ">Bapak
                             Fadillah
                         </h3>
-                        <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Diangkat
+                        <time class="block mb-2 text-sm font-normal leading-none text-gray-400">Diangkat
                             Januari 13, 2000</time>
                         <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
                             Bapak Ahmad Fadillah, seorang pemimpin yang berdedikasi dan berkomitmen di bidang pendidikan.
@@ -88,17 +88,17 @@
                     </li>
                     <li class="mb-10 ms-6">
                         <span
-                            class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+                            class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white">
                             <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                                 <path
                                     d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
                             </svg>
                         </span>
-                        <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">Bapak
+                        <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 ">Bapak
                             Fadillah
                         </h3>
-                        <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Diangkat
+                        <time class="block mb-2 text-sm font-normal leading-none text-gray-400">Diangkat
                             Januari 13, 2000</time>
                         <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
                             Bapak Ahmad Fadillah, seorang pemimpin yang berdedikasi dan berkomitmen di bidang pendidikan.
@@ -112,17 +112,17 @@
                     </li>
                     <li class="mb-10 ms-6">
                         <span
-                            class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+                            class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white">
                             <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                                 <path
                                     d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
                             </svg>
                         </span>
-                        <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">Bapak
+                        <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 ">Bapak
                             Fadillah
                         </h3>
-                        <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Diangkat
+                        <time class="block mb-2 text-sm font-normal leading-none text-gray-400">Diangkat
                             Januari 13, 2000</time>
                         <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
                             Bapak Ahmad Fadillah, seorang pemimpin yang berdedikasi dan berkomitmen di bidang pendidikan.
@@ -136,17 +136,17 @@
                     </li>
                     <li class="mb-10 ms-6">
                         <span
-                            class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+                            class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white">
                             <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                                 <path
                                     d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
                             </svg>
                         </span>
-                        <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">Bapak
+                        <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 ">Bapak
                             Fadillah
                         </h3>
-                        <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Diangkat
+                        <time class="block mb-2 text-sm font-normal leading-none text-gray-400">Diangkat
                             Januari 13, 2000</time>
                         <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
                             Bapak Ahmad Fadillah, seorang pemimpin yang berdedikasi dan berkomitmen di bidang pendidikan.
@@ -160,17 +160,17 @@
                     </li>
                     <li class="mb-10 ms-6">
                         <span
-                            class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+                            class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white">
                             <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                                 <path
                                     d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
                             </svg>
                         </span>
-                        <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">Bapak
+                        <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 ">Bapak
                             Fadillah
                         </h3>
-                        <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Diangkat
+                        <time class="block mb-2 text-sm font-normal leading-none text-gray-400">Diangkat
                             Januari 13, 2000</time>
                         <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
                             Bapak Ahmad Fadillah, seorang pemimpin yang berdedikasi dan berkomitmen di bidang pendidikan.
@@ -182,6 +182,8 @@
                             namun juga mencakup peran penting dalam membimbing dan memotivasi staf serta siswa.
                         </p>
                     </li>
+                    
+
                 </ol>
             </div>
         </div>

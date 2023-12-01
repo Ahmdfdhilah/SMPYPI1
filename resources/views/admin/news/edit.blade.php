@@ -27,7 +27,7 @@
         @enderror
         <div class="form-group">
           <label for="">Tipe</label>
-          <input name="publication_type" id="" cols="30" rows="10" class="form-control" placeholder="Tipe" value="{{$news->publication_name}}">
+          <input name="publication_type" id="" cols="30" rows="10" class="form-control" placeholder="Tipe" value="{{$news->publication_type}}">
         </div>
         @error('publication_type')
         <small style="color: red;">{{$message}}</small>
@@ -35,13 +35,13 @@
         <img src="/image/{{$news->image}}" class="img-fluid" width="150">
         <div class="form-group">
           <label for="">Gambar</label>
-          <input type="file" class="form-control" name="publication_img">
+          <input type="file" class="form-control w-fit" name="publication_img">
         </div>
         @error('publication_img')
         <small style="color: red;">{{$message}}</small>
         @enderror
         <div class="form-group">
-          <button class="btn btn-primary btn-block" type="submit">Submit</button>
+          <button class="btn btn-primary btn-block bg-blue-600 w-fit" type="submit">Submit</button>
         </div>
       </form>
     </div>

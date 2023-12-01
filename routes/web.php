@@ -16,7 +16,6 @@ use App\Http\Controllers\Client\ClientExtracurricularController;
 use App\Http\Controllers\Client\ClientFacilityController;
 use App\Http\Controllers\Client\ClientNewsController;
 use App\Http\Controllers\Client\ClientEmployeeController;
-use App\Http\Controllers\Client\ClientStudentController;
 use App\Http\Controllers\Client\ClientScholarshipController;
 use Illuminate\Support\Facades\Route; 
 use App\Http\Controllers\DashboardController;

@@ -35,13 +35,13 @@
         <img src="/image/{{$achievement->achievement_img}}" class="img-fluid" width="150">
         <div class="form-group">
           <label for="">Gambar</label>
-          <input type="file" class="form-control" name="achievement_img">
+          <input type="file" class="form-control w-fit" name="achievement_img">
         </div>
         @error('achievement_img')
         <small style="color: red;">{{$message}}</small>
         @enderror
         <div class="form-group">
-          <button class="btn btn-primary btn-block" type="submit">Submit</button>
+          <button class="btn btn-primary btn-block bg-blue-600 w-fit" type="submit">Submit</button>
         </div>
       </form>
     </div>

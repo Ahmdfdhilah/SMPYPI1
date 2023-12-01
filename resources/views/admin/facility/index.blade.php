@@ -46,7 +46,7 @@
                 <form action="{{route('facilities.destroy', $data->id )}}" method="POST" >
                   @csrf
                   @method('DELETE')
-                  <button type="submit" class="btn btn-danger ml-3">Hapus</button>
+                  <button type="submit" class="btn btn-danger bg-red-600 ml-3">Hapus</button>
                 </form>
               </div>
             </td>

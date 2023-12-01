@@ -12,12 +12,12 @@
         <div class="flex flex-wrap justify-center lg:justify-normal gap-10 pt-12 pb-48" data-aos="fade-up" data-aos-delay="200">
             @foreach ($scholarships as $scholarship)
                 <div
-                    class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow">
                     <a href="#">
-                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Program Indonesia
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Program Indonesia
                             Pintar</h5>
                     </a>
-                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{{ substr($scholarship->scholarship_desc, 0, 100) }} ...</p>
+                    <p class="mb-3 font-normal text-gray-700">{{ substr($scholarship->scholarship_desc, 0, 100) }} ...</p>
                     <div class="flex flex-col gap-4 pt-4">
                         <a href="/beasiswa/{{$scholarship->id}}/deskripsi"
                             class="w-fit inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#FFAC00] rounded-lg hover:bg-[#FFF000]">
