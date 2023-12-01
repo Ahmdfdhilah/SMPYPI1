@@ -166,7 +166,7 @@
                 class="flex flex-col-reverse lg:flex-row justify-between  rounded relative mb-48">
                 <div class="w-full sm:w-4/5">
                     <div class="m-auto pl-2 text-xl mb-2 border-s-4 border-[#FFAC00]">Kepala Sekolah</div>
-                    <div class="bg-white dark:bg-gray-900">
+                    <div class="bg-white">
                         <div class="container px-6 py-10 mx-auto">
                             <div class="lg:-mx-6 lg:flex lg:items-center">
                                 <img class="object-cover object-center lg:w-[24rem] lg:mx-6 w-64 h-64 rounded-full lg:h-[24rem]"
