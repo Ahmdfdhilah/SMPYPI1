@@ -14,12 +14,12 @@
   <!-- Theme style -->
   <link rel="stylesheet" href="/lte/dist/css/adminlte.min.css">
 </head>
-<body class="hold-transition login-page" style="background-color: #001f3f;">
+<body class="hold-transition login-page" style="background: url(/bg-login.jpg); background-size: cover;">
 <div class="login-box">
   <!-- /.login-logo -->
-  <div class="card card-outline card-primary">
+  <div class="card">
     <div class="card-header text-center">
-      <a href="/lte/index2.html" class="h1" style="color: #1a6cf0;"><b>Login</b></a>
+      <a href="/lte/index2.html" class="h1" style="color: #FFCA00;"><b>Login Admin</b></a>
     </div>
     <div class="card-body">
       <!-- <p class="login-box-msg" style="color:#1a6cf0 ;">Sign in to start your session</p> -->
@@ -36,7 +36,7 @@
         <div class="input-group mb-3">
           <input type="text" class="form-control" placeholder="Email" name="email">
           <div class="input-group-append">
-            <div class="input-group-text" style="background-color: #1a6cf0;">
+            <div class="input-group-text" style="background-color: #FFCA00;">
               <span class="fas fa-envelope" style="color: white;"></span>
             </div>
           </div>
@@ -47,7 +47,7 @@
         <div class="input-group mb-3">
           <input type="password" class="form-control" placeholder="Password" name="password">
           <div class="input-group-append">
-            <div class="input-group-text" style="background-color: #1a6cf0;">
+            <div class="input-group-text" style="background-color: #FFCA00;">
               <span class="fas fa-lock" style="color: white;"></span>
             </div>
           </div>
@@ -59,7 +59,7 @@
           </div>
           <!-- /.col -->
           <div class="col-12">
-            <button type="submit" class="btn btn-block" style="background-color: #1a6cf0; color : white">Sign In</button>
+            <button type="submit" class="btn btn-block" style="background-color: #FFCA00; color : white">Submit</button>
           </div>
           <!-- /.col -->
         </div>

@@ -42,7 +42,7 @@ class NewsController extends Controller
 
         if ($image = $request->file('publication_img')) {
             $destinationPath = 'image/';
-            $imageName = $image->getClientOriginalName();
+            $imageName = time() . '_' . $image->getClientOriginalName();
             $image->move($destinationPath, $imageName);
             $input['publication_img'] = $imageName;
         }
@@ -84,7 +84,7 @@ class NewsController extends Controller
 
         if ($image = $request->file('publication_img')) {
             $destinationPath = 'image/';
-            $imageName = $image->getClientOriginalName();
+            $imageName = time() . '_' . $image->getClientOriginalName();
             $image->move($destinationPath, $imageName);
             $input['publication_img'] = $imageName;
         } else {

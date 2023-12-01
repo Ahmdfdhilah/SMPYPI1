@@ -1,41 +1,27 @@
 @extends('layouts.admin.app')
 
-@section('title', 'Data Publikasi')
+@section('title', 'Data Siswa')
 
 @section('content')
 
 <div class="container">
-  <a href="/admin/news" class="btn btn-primary mb-3">Kembali</a>
+  <a href="/admin/students" class="btn btn-primary mb-3">Kembali</a>
   <div class="row">
     <div class="col-md-12">
-      <form action="{{ route('news.store') }}" method="POST" enctype="multipart/form-data">
+      <form action="{{ route('students.store') }}" method="POST" enctype="multipart/form-data">
         @csrf
         <div class="form-group">
-          <label for="">Nama</label>
-          <input type="text" class="form-control" name="publication_name" placeholder="Nama">
+          <label for="">Total</label>
+          <input type="number" class="form-control" name="student_total" placeholder="Total">
         </div>
-        @error('publication_name')
+        @error('student_total')
         <small style="color: red;">{{$message}}</small>
         @enderror
         <div class="form-group">
-          <label for="">Deskripsi</label>
-          <textarea name="publication_desc" id="" cols="30" rows="10" class="form-control" placeholder="Deskripsi" ></textarea>
+          <label for="">Tahun ajaran</label>
+          <input name="student_tahun_ajaran" id="" cols="30" rows="10" class="form-control" placeholder="Tipe" >
         </div>
-        @error('publication_desc')
-        <small style="color: red;">{{$message}}</small>
-        @enderror
-        <div class="form-group">
-          <label for="">Tipe</label>
-          <input name="publication_type" id="" cols="30" rows="10" class="form-control" placeholder="Tipe" >
-        </div>
-        @error('publication_type')
-        <small style="color: red;">{{$message}}</small>
-        @enderror
-        <div class="form-group">
-          <label for="">Gambar</label>
-          <input type="file" class="form-control" name="publication_img">
-        </div>
-        @error('publication_img')
+        @error('student_tahun_ajaran')
         <small style="color: red;">{{$message}}</small>
         @enderror
         <div class="form-group">

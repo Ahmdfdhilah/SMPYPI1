@@ -30,7 +30,7 @@
     <!-- /.navbar -->
 
     <!-- Main Sidebar Container -->
-    <aside class="main-sidebar sidebar-dark-primary elevation-4" style="background-color: #343a40;">
+    <aside class="main-sidebar sidebar-dark-primary elevation-4 position-fixed" style="background-color: #343a40;">
       <!-- Brand Logo -->
       <div class="brand-link" style="background-color: #343a40;">
         <img src="/frontend/logo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8; max-width: 50px; max-height: 40px;">
@@ -150,7 +150,7 @@
           <div class="row">
             <!-- /.col-md-6 -->
             <div class="col-lg-12">
-              <div class="card card-primary card-outline">
+              <div class="card">
                 <div class="card-header" style="background-color: #FFCA00;">
                   <h5 class="m-0" style="color: white;">@yield('title')</h5>
                 </div>
@@ -178,13 +178,6 @@
     </aside>
     <!-- /.control-sidebar -->
 
-    <!-- Main Footer -->
-    <footer class="main-footer" style="background: #343a40">
-      <!-- Default to the left -->
-      <div class="text-center text-sm text-white p-4">
-        &copy; {{ date('Y') }} @Ahmdfdhilah. All rights reserved.
-    </div>
-    </footer>
   </div>
   <!-- ./wrapper -->
 

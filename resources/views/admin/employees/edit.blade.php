@@ -1,43 +1,42 @@
 @extends('layouts.admin.app')
 
-@section('title', 'Data Publikasi')
+@section('title', 'Data Pegawai')
 
 @section('content')
 
 <div class="container">
-  <a href="/admin/news" class="btn btn-primary mb-3">Kembali</a>
+  <a href="/admin/employees" class="btn btn-primary mb-3">Kembali</a>
   <div class="row">
     <div class="col-md-12">
-      <form action="{{ route('news.update', $news->id) }}" method="POST" enctype="multipart/form-data">
-      @method('PUT')  
-      @csrf
+      <form action="{{ route('employees.update', $employee->id) }}" method="POST" enctype="multipart/form-data">
+        @method('PUT')  
+        @csrf
         <div class="form-group">
           <label for="">Nama</label>
-          <input type="text" class="form-control" name="publication_name" placeholder="Judul" value="{{$news->publication_name}}">
+          <input type="text" class="form-control" name="employee_name" placeholder="Nama" value="{{$employee->employee_name}}">
         </div>
-        @error('publication_name')
-        <small style="color: red;">{{$message}}</small>
-        @enderror
-        <div class="form-group">
-          <label for="">Deskripsi</label>
-          <textarea name="publication_desc" id="" cols="30" rows="10" class="form-control" placeholder="Deskripsi" >{{$news->publication_desc}}</textarea>
-        </div>
-        @error('publication_desc')
+        @error('employee_name')
         <small style="color: red;">{{$message}}</small>
         @enderror
         <div class="form-group">
           <label for="">Tipe</label>
-          <input name="publication_type" id="" cols="30" rows="10" class="form-control" placeholder="Tipe" value="{{$news->publication_name}}">
+          <input name="employee_type" id="" cols="30" rows="10" class="form-control" placeholder="Tipe"  value="{{$employee->employee_type}}">
         </div>
-        @error('publication_type')
+        @error('employee_type')
         <small style="color: red;">{{$message}}</small>
         @enderror
-        <img src="/image/{{$news->image}}" class="img-fluid" width="150">
+        <div class="form-group">
+          <label for="">Posisi</label>
+          <input name="employee_position" id="" cols="30" rows="10" class="form-control" placeholder="Posisi" value="{{$employee->employee_position}}">
+        </div>
+        @error('employee_position')
+        <small style="color: red;">{{$message}}</small>
+        @enderror
         <div class="form-group">
           <label for="">Gambar</label>
-          <input type="file" class="form-control" name="publication_img">
+          <input type="file" class="form-control" name="employee_img">
         </div>
-        @error('publication_img')
+        @error('employee_img')
         <small style="color: red;">{{$message}}</small>
         @enderror
         <div class="form-group">
@@ -46,5 +45,7 @@
       </form>
     </div>
   </div>
+  
 </div>
+
 @endsection

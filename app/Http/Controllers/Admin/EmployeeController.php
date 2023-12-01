@@ -31,8 +31,8 @@ class EmployeeController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'employees_name' => 'required',
-            'employees_type' => 'required',
+            'employee_name' => 'required',
+            'employee_type' => 'required',
             'employee_position' => 'required',
             'employee_img' => 'required|image'
         ]);
@@ -41,7 +41,7 @@ class EmployeeController extends Controller
     
         if ($image = $request->file('employee_img')) {
             $destinationPath = 'image/';
-            $imageName = $image->getClientOriginalName();
+            $imageName = time() . '_' . $image->getClientOriginalName();
             $image->move($destinationPath, $imageName);
             $input['employee_img'] = $imageName;
         }
@@ -54,10 +54,6 @@ class EmployeeController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Employees $employee)
-    {
-        return view('admin.employees.show', compact('employee'));
-    }
     
     /**
      * Show the form for editing the specified resource.
@@ -73,8 +69,8 @@ class EmployeeController extends Controller
     public function update(Request $request, Employees $employee)
     {
         $request->validate([
-            'employees_name' => 'required',
-            'employees_type' => 'required',
+            'employee_name' => 'required',
+            'employee_type' => 'required',
             'employee_position' => 'required',
             'employee_img' => 'image'
         ]);
@@ -83,7 +79,7 @@ class EmployeeController extends Controller
     
         if ($image = $request->file('employee_img')) {
             $destinationPath = 'image/';
-            $imageName = $image->getClientOriginalName();
+            $imageName = time() . '_' . $image->getClientOriginalName();
             $image->move($destinationPath, $imageName);
             $input['employee_img'] = $imageName;
         } else {

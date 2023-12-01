@@ -1,41 +1,41 @@
 @extends('layouts.admin.app')
 
-@section('title', 'Data Publikasi')
+@section('title', 'Data Pegawai')
 
 @section('content')
 
 <div class="container">
-  <a href="/admin/news" class="btn btn-primary mb-3">Kembali</a>
+  <a href="/admin/employees" class="btn btn-primary mb-3">Kembali</a>
   <div class="row">
     <div class="col-md-12">
-      <form action="{{ route('news.store') }}" method="POST" enctype="multipart/form-data">
+      <form action="{{ route('employees.store') }}" method="POST" enctype="multipart/form-data">
         @csrf
         <div class="form-group">
           <label for="">Nama</label>
-          <input type="text" class="form-control" name="publication_name" placeholder="Nama">
+          <input type="text" class="form-control" name="employee_name" placeholder="Nama">
         </div>
-        @error('publication_name')
-        <small style="color: red;">{{$message}}</small>
-        @enderror
-        <div class="form-group">
-          <label for="">Deskripsi</label>
-          <textarea name="publication_desc" id="" cols="30" rows="10" class="form-control" placeholder="Deskripsi" ></textarea>
-        </div>
-        @error('publication_desc')
+        @error('employee_name')
         <small style="color: red;">{{$message}}</small>
         @enderror
         <div class="form-group">
           <label for="">Tipe</label>
-          <input name="publication_type" id="" cols="30" rows="10" class="form-control" placeholder="Tipe" >
+          <input name="employee_type" id="" cols="30" rows="10" class="form-control" placeholder="Tipe" >
         </div>
-        @error('publication_type')
+        @error('employee_type')
+        <small style="color: red;">{{$message}}</small>
+        @enderror
+        <div class="form-group">
+          <label for="">Posisi</label>
+          <input name="employee_position" id="" cols="30" rows="10" class="form-control" placeholder="Posisi" >
+        </div>
+        @error('employee_position')
         <small style="color: red;">{{$message}}</small>
         @enderror
         <div class="form-group">
           <label for="">Gambar</label>
-          <input type="file" class="form-control" name="publication_img">
+          <input type="file" class="form-control" name="employee_img">
         </div>
-        @error('publication_img')
+        @error('employee_img')
         <small style="color: red;">{{$message}}</small>
         @enderror
         <div class="form-group">
