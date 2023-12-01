@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('scholarship_name');
             $table->text('scholarship_desc');
-            $table->string('scholarship_contition');
+            $table->text('scholarship_condition');
             $table->timestamps();
         });
     }

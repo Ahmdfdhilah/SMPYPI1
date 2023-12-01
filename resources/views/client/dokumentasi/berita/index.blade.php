@@ -3,10 +3,10 @@
     $category = isset($_GET['category']) ? $_GET['category'] : null;
 @endphp
 
-@extends('layouts.app')
+@extends('layouts.client.app')
 
 @section('content')
-    <img class="w-full h-44 lg:h-60" src="/storage/frontend/bg.jpg" alt="bg">
+    <img class="w-full h-44 lg:h-60" src="/frontend/bg.jpg" alt="bg">
     <main class="w-full bg-white pt-12 px-4 pb-48 md:px-11 lg:px-24">
 
         <div class="relative w-fit flex text-md font-light lg:text-xl">
@@ -64,7 +64,7 @@
                     data-aos="fade-up" data-aos-delay="{{ $loop->index * 50 }}">
                     <a href="#">
                         <img class="rounded-t-lg object-cover w-full h-48"
-                            src="/storage/{{ $publication->publication_img }}" alt="" />
+                            src="/image/{{ $publication->publication_img }}" alt="" />
                     </a>
                     <div class="p-5">
                         <a href="/berita/{{ $publication->id }}">

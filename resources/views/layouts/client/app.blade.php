@@ -36,7 +36,7 @@
         <nav class="bg-[#434343] py-3 px-8">
             <div class="container mx-auto flex flex-wrap items-center justify-between">
                 <div class="flex items-center">
-                    <img src="/storage/frontend/logo.png" class="h-12 mr-2 w-12" alt="logo" />
+                    <img src="/frontend/logo.png" class="h-12 mr-2 w-12" alt="logo" />
                     <div class="flex flex-col items-left">
                         <div class="text-l text-[#FFF100] font-semibold whitespace-nowrap leading-6">SMP YPI 1 Braja
                             Selebah</div>
@@ -167,7 +167,7 @@
 
         <div class="container mx-auto flex flex-col md:flex-row justify-evenly px-8 lg:gap-12">
             <div class="w-full md:w-1/3 p-5">
-                <img src="/storage/frontend/logo.png" class="h-12 mr-2 w-12" alt="Logo" />
+                <img src="/frontend/logo.png" class="h-12 mr-2 w-12" alt="Logo" />
                 <div class="flex flex-col items-left">
                     <div class="text-l text-[#FFF100] font-semibold whitespace-nowrap leading-6">SMP YPI 1 Braja
                         Selebah

@@ -4,7 +4,7 @@
     <main class="relative w-full">
         <div class="relative pt-16 pb-32 flex content-center items-center justify-center" style="min-height: 75vh;">
             <div class="absolute top-0 w-full h-full bg-center bg-cover"
-                style='background-image: url("/storage/frontend/bg-home.png");'>
+                style='background-image: url("/frontend/bg-home.png");'>
                 <span id="blackOverlay" class="w-full h-full absolute opacity-75 bg-black"></span>
             </div>
             <div class="container relative mx-auto">
@@ -105,7 +105,7 @@
                     <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
                         <div
                             class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-pink-600">
-                            <img alt="..." src="/storage/frontend/home-1.png" class="w-full align-middle rounded-lg" />
+                            <img alt="..." src="/frontend/home-1.png" class="w-full align-middle rounded-lg" />
                         </div>
                     </div>
                 </div>
@@ -123,7 +123,7 @@
                         @foreach ($pengumuman as $publication)
                             <!-- Frame -->
                             <div class="w-full border border-gray-300 rounded">
-                                <img src="/storage/{{ $publication->publication_img }}"
+                                <img src="/image/{{ $publication->publication_img }}"
                                     class="object-cover mb-4 w-full h-48" alt="Image">
                                 <div class="p-2">
                                     <p class="text-xs font-thin">{{ $publication->created_at }}</p>
@@ -147,7 +147,7 @@
                     <div class="w-full container mx-auto flex flex-col gap-4 lg:gap-12 lg:flex-row pb-24">
                         @foreach ($blog as $publication)
                             <div class="w-full border-2 border-gray-300 rounded-xl">
-                                <img src="/storage/{{ $publication->publication_img }}"
+                                <img src="/image/{{ $publication->publication_img }}"
                                     class="object-cover mb-4 w-full h-48" alt="Image">
                                 <div class="p-2">
                                     <p class="text-xs font-thin">{{ $publication->created_at }}</p>
@@ -174,7 +174,7 @@
                         <div class="container px-6 py-10 mx-auto">
                             <div class="lg:-mx-6 lg:flex lg:items-center">
                                 <img class="object-cover object-center lg:w-[24rem] lg:mx-6 w-64 h-64 rounded-full lg:h-[24rem]"
-                                    src="/storage/frontend/kepsek.jpeg" alt="">
+                                    src="/frontend/kepsek.jpeg" alt="">
 
                                 <div class="mt-8 lg:w-1/2 lg:px-6 lg:mt-0">
                                     <p class="text-5xl font-semibold text-[#FFCA00]">“</p>

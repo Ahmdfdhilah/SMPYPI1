@@ -4,10 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Achievement;
-use App\Models\Eskul;
+use App\Models\Extracurricular;
 use App\Models\Facility;
-use App\Models\Employee;
-use App\Models\Student;
+use App\Models\Employees;
+use App\Models\Students;
 use Illuminate\Support\Facades\DB;
 
 class HomeController extends Controller
@@ -15,12 +15,12 @@ class HomeController extends Controller
     public function __invoke()
     {
         $achievements = Achievement::all();
-        $eskuls = Eskul::all();
+        $eskuls = Extracurricular::all();
         $facilities = Facility::all();
-        $totalStudent = Student::sum('student_total');
-        $totalGuru = Employee::where('employee_type', 'guru')->count();
+        $totalStudent = Students::sum('student_total');
+        $totalGuru = Employees::where('employee_type', 'guru')->count();
         $totalKelas = Facility::where('facilities_name', 'kelas')->sum('facilities_total');
-        $employees = Employee::all();
+        $employees = Employees::all();
         $pengumuman = DB::table('publications')
             ->where('publication_type', 'like', "pengumuman")->latest()->take(3)->get();
         $blog = DB::table('publications')

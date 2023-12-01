@@ -1,7 +1,7 @@
-@extends('layouts.app') <!-- Assuming you have a layout file -->
+@extends('layouts.client.app')
 
 @section('content')
-    <img class="w-full h-44 lg:h-60" src="/storage/frontend/bg.jpg" alt="bg">
+    <img class="w-full h-44 lg:h-60" src="/frontend/bg.jpg" alt="bg">
     <main class="w-full bg-white pt-12 px-4 md:px-11 lg:px-24">
         <div class="relative w-fit flex text-md font-light lg:text-xl">
             <a href="/">Home /&nbsp;</a>
@@ -10,7 +10,7 @@
 
         <div class="max-w-2xl mx-auto px-4 py-8">
 
-            <img src="/storage/{{$publication->publication_img}}" alt="{{ $publication->publication_title }}"
+            <img src="/image/{{$publication->publication_img}}" alt="{{ $publication->publication_title }}"
                  class="w-full h-64 object-cover mb-6 rounded-lg">
     
             <h1 class="text-3xl font-semibold mb-4">{{ $publication->publication_title }}</h1>

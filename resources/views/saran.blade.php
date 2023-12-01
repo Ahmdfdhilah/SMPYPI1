@@ -1,7 +1,7 @@
-@extends('layouts.app')
+@extends('layouts.client.app')
 
 @section('content')
-    <img class="w-full h-44 lg:h-60" src="/storage/frontend/bg.jpg" alt="bg">
+    <img class="w-full h-44 lg:h-60" src="/frontend/bg.jpg" alt="bg">
     <main class="w-full bg-white pt-12 pb-48 px-8 md:px-11 lg:px-24">
         <div class="relative w-fit flex text-md font-light lg:text-xl">
             <a href="/">Home /&nbsp;</a>
@@ -9,7 +9,7 @@
         </div>
         <section class="min-h-screen py-24 lg:flex" data-aos="fade-up" data-aos-delay="200">
             <div
-                class="flex flex-col justify-center w-full p-8 bg-cover lg:px-12 xl:px-32 lg:w-1/2" style="background-image: url('/storage/frontend/contact.jpg');">
+                class="flex flex-col justify-center w-full p-8 bg-cover lg:px-12 xl:px-32 lg:w-1/2" style="background-image: url('/frontend/contact.jpg');">
                 <div class="bg-white opacity-95 p-8 rounded-xl">
                     <h1 class="text-2xl font-semibold  capitalize lg:text-3xl">Saran dan
                         Masukan

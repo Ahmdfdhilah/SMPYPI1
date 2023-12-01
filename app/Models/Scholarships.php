@@ -9,9 +9,9 @@ class Scholarships extends Model
 {
     use HasFactory;
     protected $guarded = 'id';
-    protected $table = 'scholarhips';
+    protected $table = 'scholarships';
 
     protected $fillable = [
-        'scholarship_name', 'scholarship_desc', 'scholarship_contition'
+        'scholarship_name', 'scholarship_desc', 'scholarship_condition'
     ];
 }

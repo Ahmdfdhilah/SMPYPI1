@@ -1,7 +1,7 @@
-@extends('layouts.app')
+@extends('layouts.client.app')
 
 @section('content')
-    <img class="w-full h-44 lg:h-60" src="/storage/frontend/bg.jpg" alt="bg">
+    <img class="w-full h-44 lg:h-60" src="/frontend/bg.jpg" alt="bg">
     <main class="w-full bg-white py-12 px-8 md:px-11 lg:px-24 ">
         <div class="relative w-fit flex text-md font-light lg:text-xl">
             <a href="/">Home /&nbsp;</a>
@@ -23,7 +23,7 @@
             <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
                 <div
                     class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-pink-600">
-                    <img alt="..." src="/storage/frontend/home-1.png" class="w-full align-middle rounded-t-lg" />
+                    <img alt="..." src="/frontend/home-1.png" class="w-full align-middle rounded-t-lg" />
                 </div>
             </div>
         </div>
@@ -50,7 +50,7 @@
             <div class="w-full md:w-4/12 px-4 mr-auto ml-auto lg:order-1">
                 <div
                     class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-pink-600">
-                    <img alt="..." src="/storage/frontend/home-1.png" class="w-full align-middle rounded-t-lg" />
+                    <img alt="..." src="/frontend/home-1.png" class="w-full align-middle rounded-t-lg" />
                 </div>
             </div>
         </div>
