@@ -1,6 +1,6 @@
 # SMP YPI 1 BRAJA SELEBAH Website
 
-![SMP YPI 1 BRAJA SELEBAH Logo](/frontend/logo.png)
+![SMP YPI 1 BRAJA SELEBAH Logo](https://github.com/Ahmdfdhilah/SMPYPI1/blob/main/public/frontend/logo.png)
 
 ## Deskripsi
 SMP YPI 1 BRAJA SELEBAH Website adalah situs web resmi SMP YPI 1 BRAJA SELEBAH yang dikembangkan menggunakan Laravel. Situs ini menyediakan informasi terkini seputar SMP YPI 1 BRAJA SELEBAH, termasuk berita, acara, dan profil sekolah.
