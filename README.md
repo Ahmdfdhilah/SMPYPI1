@@ -1,72 +1,86 @@
-# SMP YPI 1 BRAJA SELEBAH - Proyek Kapita Selekta
+# SMP YPI 1 BRAJA SELEBAH Website
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Ahmdfdhilah/kapita_selekta/blob/main/LICENSE)
+![SMP YPI 1 BRAJA SELEBAH Logo](/frontend/logo.png)
 
-Deskripsi singkat proyek atau repositori di sini. Misalnya, ini bisa menjadi proyek akademis, proyek open source, atau apa pun yang relevan dengan kapita_selekta.
+## Deskripsi
+SMP YPI 1 BRAJA SELEBAH Website adalah situs web resmi SMP YPI 1 BRAJA SELEBAH yang dikembangkan menggunakan Laravel. Situs ini menyediakan informasi terkini seputar SMP YPI 1 BRAJA SELEBAH, termasuk berita, acara, dan profil sekolah.
 
-## Gambaran
+## Installation
 
-Proyek ini bertujuan untuk menyajikan kapita selekta, yaitu rangkuman dan kumpulan materi penting dalam suatu bidang atau topik tertentu. Repositori ini dapat digunakan sebagai sumber belajar atau referensi bagi mereka yang tertarik memahami konsep-konsep fundamental dalam suatu bidang tertentu.
+Follow these steps to set up the project on your local machine:
 
-## Teknologi dan Dependensi
+1. Clone the repository:
 
-- Laravel: ^10.10
-- Vite: ^4.0.0
-- Tailwind CSS: ^3.3.5
-- Laravel Vite Plugin: ^0.8.0
-- dan lainnya...
-
-## Instalasi
-
-1. **Klon Repositori:**
     ```bash
-    git clone https://github.com/Ahmdfdhilah/kapita_selekta.git
+    git clone https://github.com/Ahmdfdhilah/SMPYPI1
     ```
 
-2. **Instal Dependensi PHP dengan Composer:**
+2. Change into the project directory:
+
+    ```bash
+    cd SMPYPI1
+    ```
+
+3. Create a `.env` file by copying the `.env.example` file and adjusting it according to your local environment:
+
+    ```bash
+    cp .env.example .env
+    ```
+
+4. Install PHP dependencies:
+
     ```bash
     composer install
     ```
 
-3. **Instal Dependensi JavaScript dengan NPM:**
+5. Install Node.js dependencies:
+
     ```bash
     npm install
     ```
 
-4. **Konfigurasi Laravel:**
+6. Install Bootstrap Icons:
+
     ```bash
-    cp .env.example .env
+    npm i bootstrap-icons
+    ```
+
+7. Install Flowbite:
+
+    ```bash
+    npm install flowbite
+    ```
+
+8. Run database migrations:
+
+    ```bash
+    php artisan migrate:fresh
+    ```
+
+9. Generate an application key:
+
+    ```bash
     php artisan key:generate
     ```
 
-5. **Jalankan Migrasi dan Seeder (jika diperlukan):**
+10. Seed the database:
+
     ```bash
     php artisan migrate --seed
     ```
 
-6. **Jalankan Server Pembangunan:**
-    ```bash
-    php artisan serve
-    ```
-
-    atau
+11. Compile frontend assets:
 
     ```bash
     npm run dev
     ```
 
-## Panduan Pengguna
+12. Open a new terminal and start the Laravel development server:
 
-1. Jelajahi aplikasi pada URL [http://localhost:8000](http://localhost:8000).
+    ```bash
+    php artisan serve
+    ```
 
-2. Buka direktori yang sesuai dengan topik yang ingin Anda pelajari.
+Now, you should be able to access the application at [http://localhost:8000](http://localhost:8000).
 
-3. Temukan materi yang Anda butuhkan.
-
-## Kontribusi
-
-Kami mengundang kontribusi dari komunitas. Jika Anda ingin menambahkan materi baru, memperbaiki kesalahan, atau melakukan perbaikan lainnya, silakan buka _issue_ atau buat _pull request_.
-
-## Lisensi
-
-Proyek ini dilisensikan di bawah [MIT License](https://github.com/Ahmdfdhilah/kapita_selekta/blob/main/LICENSE).
+Feel free to customize the instructions based on any additional steps required for your specific project or environment.
