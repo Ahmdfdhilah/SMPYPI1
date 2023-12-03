@@ -83,6 +83,7 @@ class FacilityController extends Controller
             $imageName = time() . '_' . $image->getClientOriginalName();
             $image->move($destinationPath, $imageName);
             $input['facilities_img'] = $imageName;
+            @unlink(public_path("image\\" . $facility->facilities_img));
         } else {
             unset($input['facilities_img']);
         }
@@ -97,6 +98,7 @@ class FacilityController extends Controller
      */
     public function destroy(Facility $facility)
     {
+        @unlink(public_path("image\\" . $facility->facilities_img));
         $facility->delete();
 
         return redirect('/admin/facilities')->with('message', 'Data berhasil dihapus');

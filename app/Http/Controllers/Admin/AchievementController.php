@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\Achievement;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class AchievementController extends Controller
 {
@@ -77,6 +78,8 @@ class AchievementController extends Controller
             $imageName = time() . '_' . $image->getClientOriginalName();
             $image->move($destinationPath, $imageName);
             $input['achievement_img'] = $imageName;
+
+            @unlink(public_path("image\\" . $achievement->achievement_img));
         } else {
             unset($input['achievement_img']);
         }
@@ -91,8 +94,8 @@ class AchievementController extends Controller
      */
     public function destroy(Achievement $achievement)
     {
+        @unlink(public_path("image\\" . $achievement->achievement_img));
         $achievement->delete();
-
         return redirect('/admin/achievements')->with('message', 'Data berhasil dihapus');
     }
 }

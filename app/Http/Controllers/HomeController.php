@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Kepsek;
 use Illuminate\Http\Request;
 use App\Models\Achievement;
 use App\Models\Extracurricular;
@@ -15,6 +16,7 @@ class HomeController extends Controller
     public function __invoke()
     {
         $achievements = Achievement::all();
+        $kepsek = Kepsek::latest()->first();
         $eskuls = Extracurricular::all();
         $facilities = Facility::all();
         $totalStudent = Students::sum('student_total');
@@ -29,6 +31,7 @@ class HomeController extends Controller
         return view('welcome', compact(
             'achievements',
             'eskuls',
+            'kepsek',
             'facilities',
             'employees',
             'pengumuman',

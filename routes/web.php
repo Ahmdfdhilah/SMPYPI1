@@ -1,8 +1,10 @@
 <?php
 
+use App\Http\Controllers\Admin\KepsekController;
 use App\Http\Controllers\AuthController;
 
 use App\Http\Controllers\Client\ClientGaleriController;
+use App\Http\Controllers\Client\ClientSejarahController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Admin\AchievementController;
 use App\Http\Controllers\Admin\ExtracurricularController;
@@ -29,10 +31,7 @@ Route::get('/gurustaff', ClientEmployeeController::class)->name('gurustaff');
 Route::get('/visimisi', function(){
     return view('client.tentang_kami.visi_misi.index');
 })->name('visimisi');
-Route::get('/sejarah', function(){
-    return view('client.tentang_kami.sejarah.index');
-})->name('sejarah');
-
+Route::get('/sejarah', ClientSejarahController::class)->name('sejarah');
 
 // //kesiswaan
 Route::get('/prestasi', ClientAchievementController::class)->name('prestasi');
@@ -68,5 +67,6 @@ Route::prefix('/admin')->middleware('auth')->group(function() {
     Route::resource('scholarships', ScholarshipController::class);
     Route::resource('students', StudentController::class);
     Route::resource('employees', EmployeeController::class);
+    Route::resource('kepsek', KepsekController::class);
 });
 

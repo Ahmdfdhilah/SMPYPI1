@@ -115,18 +115,27 @@
             <div data-aos="fade-up" data-aos-delay="200"
                 class="flex flex-col xl:flex-row justify-between  rounded relative">
                 <div class="w-full sm:w-4/5 pt-10 mx-auto lg:mx-0">
-                    <div class="m-auto pl-2 text-xl mb-2 border-s-4 border-[#FFAC00]">Pengumuman</div>
-                    <div class="w-full container mx-auto flex flex-col gap-4 lg:gap-12 lg:flex-row">
+                    <div class="m-auto pl-2 text-xl mb-2 border-s-4 border-[#FFAC00]">Our Announcements</div>
+                    <div class="h-fit pb-8 m-auto flex items-center text-2xl font-bold">
+                        Follow our latest Announcements
+                    </div>
+                    <div class="w-full container mx-auto flex flex-col gap-4 lg:gap-12 lg:flex-row pb-24">
                         @foreach ($pengumuman as $publication)
-                            <div class="w-full border border-gray-300 rounded publication">
-                                <img src="/image/{{ $publication->publication_img }}"
-                                    class="object-cover mb-4 w-full h-48" alt="Image">
+                            <div class="w-full border-2 border-gray-300 rounded-xl publication">
+                                <img src="/image/{{ $publication->publication_img }}" class="object-cover mb-4 w-full h-48"
+                                    alt="Image">
                                 <div class="p-2">
                                     <p class="text-xs font-thin">{{ $publication->created_at }}</p>
                                     <a href="/berita/{{ $publication->id }}">
-                                        <h3 class="text-lg font-bold mb-2">{{ $publication->publication_name }}</h3>
+                                        <h3 class="text-lg font-bold mb-2">{!! $publication->publication_name !!}</h3>
                                     </a>
+                                    <div class="texy-md font-thin">
+                                        {!! substr($publication->publication_desc, 0, 200) !!} ...
+                                        <a href="/berita/{{ $publication->id }}" class="text-[#FFAC00]">baca
+                                            selengkapnya</a>
+                                    </div>
                                 </div>
+
                             </div>
                         @endforeach
                     </div>
@@ -138,17 +147,17 @@
                 <div class="w-full sm:w-4/5 pt-10 mx-auto lg:mx-0">
                     <div class="m-auto pl-2 text-xl mb-2 border-s-4 border-[#FFAC00]">Our Blog</div>
                     <div class="h-fit pb-8 m-auto flex items-center text-2xl font-bold">
-                        Follow our latest news
+                        Follow our latest blogs
                     </div>
                     <div class="w-full container mx-auto flex flex-col gap-4 lg:gap-12 lg:flex-row pb-24">
                         @foreach ($blog as $publication)
                             <div class="w-full border-2 border-gray-300 rounded-xl publication">
-                                <img src="/image/{{ $publication->publication_img }}"
-                                    class="object-cover mb-4 w-full h-48" alt="Image">
+                                <img src="/image/{{ $publication->publication_img }}" class="object-cover mb-4 w-full h-48"
+                                    alt="Image">
                                 <div class="p-2">
                                     <p class="text-xs font-thin">{{ $publication->created_at }}</p>
                                     <a href="/berita/{{ $publication->id }}">
-                                        <h3 class="text-lg font-bold mb-2">{{ $publication->publication_name }}</h3>
+                                        <h3 class="text-lg font-bold mb-2">{!! $publication->publication_name !!}</h3>
                                     </a>
                                     <div class="texy-md font-thin">
                                         {!! substr($publication->publication_desc, 0, 200) !!} ...
@@ -170,8 +179,7 @@
                         <div class="container px-6 py-10 mx-auto">
                             <div class="lg:-mx-6 lg:flex lg:items-center">
                                 <img class="object-cover object-center lg:w-[24rem] lg:mx-6 w-64 h-64 rounded-full lg:h-[24rem]"
-                                    src="/frontend/kepsek.jpeg" alt="">
-
+                                    src="/{{$kepsek->kepsek_img}}" alt="">
                                 <div class="mt-8 lg:w-1/2 lg:px-6 lg:mt-0">
                                     <p class="text-5xl font-semibold text-[#FFCA00]">“</p>
 
@@ -181,24 +189,11 @@
 
                                     <div class="max-w-lg mt-6 text-gray-500">
                                         <p class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">
-                                            Semoga dengan terus dikembangkannya website sekolah ini dapat menjadi wahana
-                                            sumber
-                                            informasi publik bagi sekolah kepada masyarakat luas tentang perkembangan SMP
-                                            YPI 1 Braja
-                                            Selebah,
-                                            menjadi wahana pengembangan diri baik bagi tenaga edukatif maupun peserta didik
+                                            {{$kepsek->kepsek_welcome}}
                                         </p>
-                                        <p class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
-                                            sebagai sarana
-                                            komunikasi antara stake holder sekolah sebagai penentu kebijakan dengan peserta
-                                            didik, alumni,
-                                            orang
-                                            tua peserta didik maupun masyarakat luas, sehingga diharapkan dapat menjadi
-                                            sebuah sinergi guna
-                                            menciptakan sekolah sebagai wawasan wiyata mandala yang inovatif. Aamiin…
                                     </div>
 
-                                    <h3 class="mt-6 text-lg font-medium text-[#FFCA00]">Jawadi</h3>
+                                    <h3 class="mt-6 text-lg font-medium text-[#FFCA00]">Bapak {{$kepsek->kepsek_name}}</h3>
                                     <p class="text-gray-600">Kepala Sekolah SMP ISLAM YPI 1 BRAJA
                                         SELEBAH</p>
                                 </div>
@@ -212,35 +207,37 @@
     </main>
     <script>
         const typingText = document.getElementById('typing-text');
-      
+
         const textToType = "Selamat Datang di Website <br> SMP YPI 1 Braja Selebah";
 
-        anime.timeline({ loop: false })
-          .add({
-            targets: '#typing-text',
-            innerHTML: [0, textToType.length], 
-            easing: 'linear',
-            round: 1,
-            duration: textToType.length * 100, 
-            update: function () {
-              typingText.innerHTML = textToType.substring(0, Math.round(typingText.innerHTML));
-            }
-          });
-      </script>
-      <script>
+        anime.timeline({
+                loop: false
+            })
+            .add({
+                targets: '#typing-text',
+                innerHTML: [0, textToType.length],
+                easing: 'linear',
+                round: 1,
+                duration: textToType.length * 100,
+                update: function() {
+                    typingText.innerHTML = textToType.substring(0, Math.round(typingText.innerHTML));
+                }
+            });
+    </script>
+    <script>
         function animateCard(selector, delay) {
-          anime({
-            targets: selector,
-            translateY: [100, 0],
-            opacity: [0, 1], 
-            easing: 'easeInOutQuad',
-            duration: 500,
-            delay: delay 
-          });
+            anime({
+                targets: selector,
+                translateY: [100, 0],
+                opacity: [0, 1],
+                easing: 'easeInOutQuad',
+                duration: 500,
+                delay: delay
+            });
         }
-    
+
         animateCard('.guru-card', 500);
         animateCard('.siswa-card', 300);
         animateCard('.kelas-card', 500);
-      </script>
+    </script>
 @endsection

@@ -98,6 +98,10 @@
                             <a href="/admin/facilities"
                                 class="bg-[#434343] hover:text-[#FFF100] md:bg-transparent text-white text-sm rounded lg:bg-transparent lg:text-grey-700' block pl-3 pr-4 py-2 md:p-0 rounded focus:outline-none">FASILITAS</a>
                         </li>
+                        <li>
+                            <a href="/admin/kepsek"
+                                class="bg-[#434343] hover:text-[#FFF100] md:bg-transparent text-white text-sm rounded lg:bg-transparent lg:text-grey-700' block pl-3 pr-4 py-2 md:p-0 rounded focus:outline-none">KEPALA SEKOLAH</a>
+                        </li>
                         <li class="flex lg:hidden">
                             <a href="/logout">
                                 <button type="button"

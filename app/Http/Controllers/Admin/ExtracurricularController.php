@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\Extracurricular;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class ExtracurricularController extends Controller
 {
@@ -80,6 +81,7 @@ class ExtracurricularController extends Controller
             $imageName = time() . '_' . $image->getClientOriginalName();
             $image->move($destinationPath, $imageName);
             $input['eskul_img'] = $imageName;
+            @unlink(public_path("image\\" . $extracurricular->extracurricular_img));
         } else {
             unset($input['eskul_img']);
         }
@@ -96,6 +98,7 @@ class ExtracurricularController extends Controller
      */
     public function destroy(Extracurricular $extracurricular)
     {
+        @unlink(public_path("image\\" . $extracurricular->extracurricular_img));
         $extracurricular->delete();
 
         return redirect('/admin/extracurriculars') -> with('message', 'Data berhasil dihapus');

@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Employees;
+use Illuminate\Support\Facades\Storage;
 class EmployeeController extends Controller
 {
     /**
@@ -82,6 +83,7 @@ class EmployeeController extends Controller
             $imageName = time() . '_' . $image->getClientOriginalName();
             $image->move($destinationPath, $imageName);
             $input['employee_img'] = $imageName;
+            @unlink(public_path("image\\" . $employee->employee_img));
         } else {
             unset($input['employee_img']);
         }
@@ -96,6 +98,7 @@ class EmployeeController extends Controller
      */
     public function destroy(Employees $employee)
     {
+        @unlink(public_path("image\\" . $employee->employee_img));
         $employee->delete();
     
         return redirect('/admin/employees')->with('message', 'Data berhasil dihapus');

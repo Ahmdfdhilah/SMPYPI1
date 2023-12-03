@@ -1,12 +1,10 @@
-<!-- resources/views/layouts/app.blade.php -->
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistem Informasi Desa</title>
+    <title>Sistem Informasi Sekolah</title>
     {{-- @vite('resources/css/app.css') --}}
     <link rel="icon" href="/client-icon.svg" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
@@ -30,6 +28,12 @@
         }
     </script>
     <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <!-- Open Graph untuk Media Sosial -->
+    <meta property="og:title" content="Sistem Informasi Desa - SMP YPI 1 Braja Selebah, Lampung Timur">
+    <meta property="og:description" content="Deskripsi singkat dan menarik mengenai Sistem Informasi Desa SMP YPI 1 Braja Selebah, Lampung Timur.">
+    <meta property="og:image" content="/path/to/og-image.jpg">
+    <meta property="og:url" content="https://smpypi1brajaselebah.sch.id/">
+    <meta property="og:type" content="website">
 
 
 </head>

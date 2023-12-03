@@ -9,8 +9,8 @@
         </div>
         <div class="text-2xl font-bold text-[#FFAC00] py-20 lg:text-3xl">Sejarah</div>
         <div class="gap-10">
-            <div data-aos="fade-up"  class="m-auto pl-2 text-xl mb-2 border-s-4 border-[#FFAC00] ">Sejarah Sekolah</div>
-            <div data-aos="fade-up"  class="p-4">
+            <div data-aos="fade-up" class="m-auto pl-2 text-xl mb-2 border-s-4 border-[#FFAC00] ">Sejarah Sekolah</div>
+            <div data-aos="fade-up" class="p-4">
                 <p class="mb-4 text-base font-normal text-gray-500">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolorum consectetur, placeat nobis,
                     numquam
@@ -59,131 +59,30 @@
                     quis sed placeat laudantium. Ex vitae earum labore id quidem ut accusamus hic beatae error animi.
                 </p>
             </div>
-            <div data-aos="fade-up" class="m-auto pl-2 text-xl mb-2 border-s-4 border-[#FFAC00] ">Sejarah Kepala Sekolah</div>
+            <div data-aos="fade-up" class="m-auto pl-2 text-xl mb-2 border-s-4 border-[#FFAC00] ">Sejarah Kepala Sekolah
+            </div>
             <div data-aos="fade-up" class="py-8 lg:px-16">
                 <ol class="relative border-s border-gray-200">
-                    <li class="mb-10 ms-6">
-                        <span
-                            class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white">
-                            <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                                <path
-                                    d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
-                            </svg>
-                        </span>
-                        <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 ">Bapak
-                            Fadillah
-                        </h3>
-                        <time class="block mb-2 text-sm font-normal leading-none text-gray-400">Diangkat
-                            Januari 13, 2000</time>
-                        <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-                            Bapak Ahmad Fadillah, seorang pemimpin yang berdedikasi dan berkomitmen di bidang pendidikan.
-                            Dengan
-                            pengalaman panjangnya, beliau berhasil meniti karier dari seorang guru hingga mencapai posisi
-                            sebagai
-                            Kepala Sekolah. Keahlian beliau dalam mengelola sekolah tidak hanya terbatas pada aspek
-                            administratif,
-                            namun juga mencakup peran penting dalam membimbing dan memotivasi staf serta siswa.
-                        </p>
-                    </li>
-                    <li class="mb-10 ms-6">
-                        <span
-                            class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white">
-                            <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                                <path
-                                    d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
-                            </svg>
-                        </span>
-                        <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 ">Bapak
-                            Fadillah
-                        </h3>
-                        <time class="block mb-2 text-sm font-normal leading-none text-gray-400">Diangkat
-                            Januari 13, 2000</time>
-                        <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-                            Bapak Ahmad Fadillah, seorang pemimpin yang berdedikasi dan berkomitmen di bidang pendidikan.
-                            Dengan
-                            pengalaman panjangnya, beliau berhasil meniti karier dari seorang guru hingga mencapai posisi
-                            sebagai
-                            Kepala Sekolah. Keahlian beliau dalam mengelola sekolah tidak hanya terbatas pada aspek
-                            administratif,
-                            namun juga mencakup peran penting dalam membimbing dan memotivasi staf serta siswa.
-                        </p>
-                    </li>
-                    <li class="mb-10 ms-6">
-                        <span
-                            class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white">
-                            <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                                <path
-                                    d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
-                            </svg>
-                        </span>
-                        <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 ">Bapak
-                            Fadillah
-                        </h3>
-                        <time class="block mb-2 text-sm font-normal leading-none text-gray-400">Diangkat
-                            Januari 13, 2000</time>
-                        <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-                            Bapak Ahmad Fadillah, seorang pemimpin yang berdedikasi dan berkomitmen di bidang pendidikan.
-                            Dengan
-                            pengalaman panjangnya, beliau berhasil meniti karier dari seorang guru hingga mencapai posisi
-                            sebagai
-                            Kepala Sekolah. Keahlian beliau dalam mengelola sekolah tidak hanya terbatas pada aspek
-                            administratif,
-                            namun juga mencakup peran penting dalam membimbing dan memotivasi staf serta siswa.
-                        </p>
-                    </li>
-                    <li class="mb-10 ms-6">
-                        <span
-                            class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white">
-                            <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                                <path
-                                    d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
-                            </svg>
-                        </span>
-                        <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 ">Bapak
-                            Fadillah
-                        </h3>
-                        <time class="block mb-2 text-sm font-normal leading-none text-gray-400">Diangkat
-                            Januari 13, 2000</time>
-                        <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-                            Bapak Ahmad Fadillah, seorang pemimpin yang berdedikasi dan berkomitmen di bidang pendidikan.
-                            Dengan
-                            pengalaman panjangnya, beliau berhasil meniti karier dari seorang guru hingga mencapai posisi
-                            sebagai
-                            Kepala Sekolah. Keahlian beliau dalam mengelola sekolah tidak hanya terbatas pada aspek
-                            administratif,
-                            namun juga mencakup peran penting dalam membimbing dan memotivasi staf serta siswa.
-                        </p>
-                    </li>
-                    <li class="mb-10 ms-6">
-                        <span
-                            class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white">
-                            <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                                <path
-                                    d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
-                            </svg>
-                        </span>
-                        <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 ">Bapak
-                            Fadillah
-                        </h3>
-                        <time class="block mb-2 text-sm font-normal leading-none text-gray-400">Diangkat
-                            Januari 13, 2000</time>
-                        <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-                            Bapak Ahmad Fadillah, seorang pemimpin yang berdedikasi dan berkomitmen di bidang pendidikan.
-                            Dengan
-                            pengalaman panjangnya, beliau berhasil meniti karier dari seorang guru hingga mencapai posisi
-                            sebagai
-                            Kepala Sekolah. Keahlian beliau dalam mengelola sekolah tidak hanya terbatas pada aspek
-                            administratif,
-                            namun juga mencakup peran penting dalam membimbing dan memotivasi staf serta siswa.
-                        </p>
-                    </li>
-                    
-
+                    @foreach ($kepsek as $data)
+                        <li class="mb-10 ms-6">
+                            <span
+                                class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white">
+                                <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                </svg>
+                            </span>
+                            <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 ">Bapak
+                                {{$data->kepsek_name}}
+                            </h3>
+                            <time class="block mb-2 text-sm font-normal leading-none text-gray-400">Diangkat
+                                {{$data->kepsek_date}}</time>
+                            <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+                                {{$data->kepsek_history}}
+                            </p>
+                        </li>
+                    @endforeach
                 </ol>
             </div>
         </div>
