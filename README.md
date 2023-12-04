@@ -1,61 +1,93 @@
-# SMP YPI 1 BRAJA SELEBAH Website
+<h1 align="center"
+  <a href="https://github.com/DenverCoder1/readme-typing-svg">
+    <img src="https://readme-typing-svg.herokuapp.com?lines=PENGEMBANGAN+SISTEM+INFORMASI+SEKOLAH+BERBASIS+WEBSITE+MENGGUNAKAN+METODE+AGILE&center=true&width=1000&height=50" alt="Project Title">
+  </a>
+</h1>
 
-![SMP YPI 1 BRAJA SELEBAH Logo](https://github.com/Ahmdfdhilah/SMPYPI1/blob/main/public/frontend/logo.png)
+<p align="center">
+  <a href="https://github.com/DenverCoder1/readme-typing-svg">
+    <img src="https://readme-typing-svg.herokuapp.com?lines=SMP+YPI+1+BRAJA+SELEBAH+Website&center=true&width=500&height=50" alt="Project Subtitle">
+  </a>
+</p>
 
-## Deskripsi
-SMP YPI 1 BRAJA SELEBAH Website adalah situs web resmi SMP YPI 1 BRAJA SELEBAH yang dikembangkan menggunakan Laravel. Situs ini menyediakan informasi terkini seputar SMP YPI 1 BRAJA SELEBAH, termasuk berita, acara, dan profil sekolah.
+<div align="center">
+  <img style="max-width: 100%; height: auto; margin: 1em 0;" src="https://github.com/Ahmdfdhilah/SMPYPI1/blob/main/public/frontend/logo.png" alt="Logo">
+</div>
 
-# PENGEMBANGAN SISTEM INFORMASI SEKOLAH BERBASIS WEBSITE MENGGUNAKAN METODE AGILE
+<h2 style="text-align: center; margin-bottom: 0.5em;">Deskripsi</h2>
 
-## Tim Pengembang:
-1. **Ahmad Fadillah (121140173)**
-   - *Job:* Project Manager + Backend Developer
-   - *Email:* ahmad.121140173@student.itera.ac.id
+<p style="text-align: center; margin-bottom: 1em;">
+Kami bermitra dengan Sekolah SMP ISLAM YPI 1 BRAJA SELEBAH untuk merancang website Sekolah yang bertujuan mengembangkan sistem informasi sekolah berbasis website untuk meningkatkan aksesibilitas informasi . SMP ISLAM YPI 1 BRAJA SELEBAH menghadapi kendala dalam menyediakan informasi dan layanan publik yang efektif kepada masyarakat dan siswa. Kurangnya aksesibilitas dan saluran komunikasi yang efisien dan ketidakjelasan dalam penyampaian informasi ke pihak eksternal dan internal.
 
-2. **Defin Surjaniah (121140022)**
-   - *Job:* Frontend Developer 1
-   - *Email:* defin.121140022@student.itera.ac.id
+Untuk mengatasi masalah ini, kami bertujuan untuk merancang website Sekolah yang interaktif dan informatif, memfasilitasi akses informasi, pengumuman, layanan Sekolah, berita lokal, dan potensi sekolah seperti prestasi , galeri dokumentasi kegiatan siswa sekolah. Kami akan menggunakan pendekatan Agile dalam pengembangan sistem informasi sekolah . Pendekatan ini akan melibatkan proses iteratif, kolaborasi yang kuat dengan pihak terkait, dan fleksibilitas dalam menyesuaikan perubahan kebutuhan sistem. Melalui analisis kebutuhan, pemilihan platform, desain, pengembangan, pemeliharaan berkala, dan evaluasi berkelanjutan, kami berupaya menciptakan solusi teknologi yang akan memperkuat komunikasi antara pihak sekolah  dan siswa, masyarakat, meningkatkan transparansi, dan mempromosikan partisipasi sekolah dalam kegiatan internal maupun eksternal .
+</p>
 
-3. **Ahmad Fathur Rohman (121140082)**
-   - *Job:* Frontend Developer 2
-   - *Email:* ahmad.121140082@student.itera.ac.id
+<h2 style="text-align: center; margin-bottom: 0.5em;">Tim Pengembang</h2>
 
-4. **Aisa Setia Primastuti (121140092)**
-   - *Job:* UI/UX Designer 1
-   - *Email:* aisa.121140092@student.itera.ac.id
+<ul style="list-style: none; padding: 0; text-align: center; margin-bottom: 1em;" id="team-list">
+  <li style="margin-bottom: 1em;">
+    <strong>Ahmad Fadillah (121140173)</strong><br>
+    Job: Project Manager + Backend Developer<br>
+    Email: <a href="mailto:ahmad.121140173@student.itera.ac.id">ahmad.121140173@student.itera.ac.id</a>
+  </li>
 
-5. **Muhammad Alfarizi (121140093)**
-   - *Job:* Frontend Developer 3
-   - *Email:* muhammad.121140093@student.itera.ac.id
+  <li style="margin-bottom: 1em;">
+    <strong>Defin Surjaniah (121140022)</strong><br>
+    Job: Frontend Developer 1<br>
+    Email: <a href="mailto:defin.121140022@student.itera.ac.id">defin.121140022@student.itera.ac.id</a>
+  </li>
 
-6. **Pannes Diba Sabila (121140117)**
-   - *Job:* UI/UX Designer 2
-   - *Email:* pannes.121140117@student.itera.ac.id
+  <li style="margin-bottom: 1em;">
+    <strong>Ahmad Fathur Rohman (121140082)</strong><br>
+    Job: Frontend Developer 2<br>
+    Email: <a href="mailto:ahmad.121140082@student.itera.ac.id">ahmad.121140082@student.itera.ac.id</a>
+  </li>
 
-## Deskripsi Proyek:
+  <li style="margin-bottom: 1em;">
+    <strong>Aisa Setia Primastuti (121140092)</strong><br>
+    Job: UI/UX Designer 1<br>
+    Email: <a href="mailto:aisa.121140092@student.itera.ac.id">aisa.121140092@student.itera.ac.id</a>
+  </li>
 
-Proyek ini bertujuan untuk mengembangkan Sistem Informasi Sekolah berbasis website dengan menerapkan metode Agile. Studi kasus dilakukan di SMP YPI1 Braja Selebah.
+  <li style="margin-bottom: 1em;">
+    <strong>Muhammad Alfarizi (121140093)</strong><br>
+    Job: Frontend Developer 3<br>
+    Email: <a href="mailto:muhammad.121140093@student.itera.ac.id">muhammad.121140093@student.itera.ac.id</a>
+  </li>
 
-### Tujuan Proyek:
+  <li style="margin-bottom: 1em;">
+    <strong>Pannes Diba Sabila (121140117)</strong><br>
+    Job: UI/UX Designer 2<br>
+    Email: <a href="mailto:pannes.121140117@student.itera.ac.id">pannes.121140117@student.itera.ac.id</a>
+  </li>
+</ul>
 
-- Meningkatkan efisiensi manajemen sekolah melalui sistem informasi yang terintegrasi.
-- Memberikan aksesibilitas yang lebih baik kepada guru, siswa, dan orang tua melalui platform web.
-- Mengoptimalkan proses pembelajaran dan administrasi sekolah.
+<h2 style="text-align: center; margin-bottom: 0.5em;">Tujuan</h2>
 
-## Metode Pengembangan: Agile
+<p style="text-align: center; margin-bottom: 1em;">
+- Meningkatkan efisiensi manajemen sekolah melalui sistem informasi yang terintegrasi. <br>
+- Memberikan aksesibilitas yang lebih baik kepada guru, siswa, dan orang tua melalui platform web. <br>
+- Mengoptimalkan proses pembelajaran dan administrasi sekolah. <br>
+</p>
+<h2 style="text-align: center; margin-bottom: 0.5em;">Metode Pengembangan: Agile</h2>
 
-Metode pengembangan yang digunakan dalam proyek ini adalah Agile, yang memungkinkan adaptasi cepat terhadap perubahan dan iterasi berkala untuk memastikan keterlibatan pemangku kepentingan yaitu pengurus sekolah SMP YPI 1 BRAJA SELEBAH.
+<p style="text-align: center; margin-bottom: 1em;">
+  Metode pengembangan yang digunakan dalam proyek ini adalah Agile, yang memungkinkan adaptasi cepat terhadap perubahan dan iterasi berkala untuk memastikan keterlibatan pemangku kepentingan yaitu pengurus sekolah SMP YPI 1 BRAJA SELEBAH.
+</p>
 
-## Kontak:
+<h2 style="text-align: center; margin-bottom: 0.5em;">Kontak</h2>
 
-Jika ada pertanyaan lebih lanjut atau informasi tambahan, silakan hubungi Project Manager:
+<p style="text-align: center; margin-bottom: 1em;">
+  Jika ada pertanyaan lebih lanjut atau informasi tambahan, silakan hubungi Project Manager:
+</p>
 
-**Ahmad Fadillah**
-- *Email:* ahmad.121140173@student.itera.ac.id
-- *Telepon:* 089647107815
-
----
-
+<ul style="list-style: none; padding: 0; text-align: center; margin-bottom: 1em;">
+  <li style="margin-bottom: 1em;">
+    <strong>Ahmad Fadillah</strong><br>
+    Email: <a href="mailto:ahmad.121140173@student.itera.ac.id">ahmad.121140173@student.itera.ac.id</a><br>
+    Telepon: 089647107815
+  </li>
+</ul>
 
 ## Installation
 
