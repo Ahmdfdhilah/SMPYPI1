@@ -87,7 +87,10 @@ class NewsController extends Controller
             $imageName = time() . '_' . $image->getClientOriginalName();
             $image->move($destinationPath, $imageName);
             $input['publication_img'] = $imageName;
-            @unlink(public_path("image\\" . $news->news_img));
+            $filePathToDelete = str_replace('\\', '/', public_path()) . '/' . $news->news_img;
+            if (file_exists($filePathToDelete)) {
+                @unlink($filePathToDelete);
+            }
         } else {
             unset($input['publication_img']);
         }
@@ -102,7 +105,10 @@ class NewsController extends Controller
      */
     public function destroy(News $news)
     {
-        @unlink(public_path("image\\" . $news->news_img));
+        $filePathToDelete = str_replace('\\', '/', public_path()) . '/' . $news->news_img;
+        if (file_exists($filePathToDelete)) {
+            @unlink($filePathToDelete);
+        }
         $news->delete();
 
         return redirect('/admin/news')->with('message', 'Data berhasil dihapus');

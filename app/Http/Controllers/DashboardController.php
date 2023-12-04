@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Employees;
+use App\Models\Kepsek;
 use App\Models\News;
 use App\Models\Achievement;
 use App\Models\Extracurricular;
@@ -22,6 +23,7 @@ class DashboardController extends Controller
             'scholarshipsCount' => Scholarships::count(),
             'studentsCount' => Students::count(),
             'employeesCount' => Employees::count(),
+            'kepsekCount' => Kepsek::count(),
         ];
 
         return view('dashboard', $data);

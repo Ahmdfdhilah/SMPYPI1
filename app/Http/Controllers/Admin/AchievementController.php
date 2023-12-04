@@ -79,7 +79,10 @@ class AchievementController extends Controller
             $image->move($destinationPath, $imageName);
             $input['achievement_img'] = $imageName;
 
-            @unlink(public_path("image\\" . $achievement->achievement_img));
+            $filePathToDelete = str_replace('\\', '/', public_path()) .'/'. $achievement->achievement_img;
+            if (file_exists($filePathToDelete)) {
+                @unlink($filePathToDelete);
+            }
         } else {
             unset($input['achievement_img']);
         }
@@ -94,7 +97,10 @@ class AchievementController extends Controller
      */
     public function destroy(Achievement $achievement)
     {
-        @unlink(public_path("image\\" . $achievement->achievement_img));
+        $filePathToDelete = str_replace('\\', '/', public_path()) .'/'. $achievement->achievement_img;
+            if (file_exists($filePathToDelete)) {
+                @unlink($filePathToDelete);
+            }
         $achievement->delete();
         return redirect('/admin/achievements')->with('message', 'Data berhasil dihapus');
     }

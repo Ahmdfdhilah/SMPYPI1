@@ -82,7 +82,10 @@ class KepsekController extends Controller
             $imageName = time() . '_' . $image->getClientOriginalName();
             $image->move($destinationPath, $imageName);
             $input['kepsek_img'] = $destinationPath . $imageName;
-            @unlink(public_path("image\\" . $kepsek->kepsek_img));
+            $filePathToDelete = str_replace('\\', '/', public_path()) .'/'. $kepsek->kepsek_img;
+            if (file_exists($filePathToDelete)) {
+                @unlink($filePathToDelete);
+            }
         } else {
             unset($input['kepsek_img']);
         }
@@ -97,7 +100,10 @@ class KepsekController extends Controller
      */
     public function destroy(Kepsek $kepsek)
     {
-        @unlink(public_path("image\\" . $kepsek->kepsek_img));
+        $filePathToDelete = str_replace('\\', '/', public_path()) .'/'. $kepsek->kepsek_img;
+        if (file_exists($filePathToDelete)) {
+            @unlink($filePathToDelete);
+        }
         $kepsek->delete();
 
         return redirect('/admin/kepsek')->with('message', 'Data berhasil dihapus');

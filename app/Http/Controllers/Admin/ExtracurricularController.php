@@ -81,7 +81,10 @@ class ExtracurricularController extends Controller
             $imageName = time() . '_' . $image->getClientOriginalName();
             $image->move($destinationPath, $imageName);
             $input['eskul_img'] = $imageName;
-            @unlink(public_path("image\\" . $extracurricular->extracurricular_img));
+            $filePathToDelete = str_replace('\\', '/', public_path()) .'/'. $extracurricular->extracurricular_img;
+            if (file_exists($filePathToDelete)) {
+                @unlink($filePathToDelete);
+            }
         } else {
             unset($input['eskul_img']);
         }
@@ -98,7 +101,10 @@ class ExtracurricularController extends Controller
      */
     public function destroy(Extracurricular $extracurricular)
     {
-        @unlink(public_path("image\\" . $extracurricular->extracurricular_img));
+        $filePathToDelete = str_replace('\\', '/', public_path()) .'/'. $extracurricular->extracurricular_img;
+        if (file_exists($filePathToDelete)) {
+            @unlink($filePathToDelete);
+        }
         $extracurricular->delete();
 
         return redirect('/admin/extracurriculars') -> with('message', 'Data berhasil dihapus');

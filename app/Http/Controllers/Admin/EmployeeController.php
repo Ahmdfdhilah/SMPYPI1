@@ -83,7 +83,10 @@ class EmployeeController extends Controller
             $imageName = time() . '_' . $image->getClientOriginalName();
             $image->move($destinationPath, $imageName);
             $input['employee_img'] = $imageName;
-            @unlink(public_path("image\\" . $employee->employee_img));
+            $filePathToDelete = str_replace('\\', '/', public_path()) .'/'. $employee->employee_img;
+            if (file_exists($filePathToDelete)) {
+                @unlink($filePathToDelete);
+            }
         } else {
             unset($input['employee_img']);
         }
@@ -98,7 +101,10 @@ class EmployeeController extends Controller
      */
     public function destroy(Employees $employee)
     {
-        @unlink(public_path("image\\" . $employee->employee_img));
+        $filePathToDelete = str_replace('\\', '/', public_path()) .'/'. $employee->employee_img;
+        if (file_exists($filePathToDelete)) {
+            @unlink($filePathToDelete);
+        }
         $employee->delete();
     
         return redirect('/admin/employees')->with('message', 'Data berhasil dihapus');

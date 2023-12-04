@@ -8,3 +8,17 @@
 @tailwind utilities;
 
 /* Pernyataan CSS lainnya */
+/* Add your custom styles in a separate CSS file or in the style section of your blade file */
+
+/* Example custom styles for cards */
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Add more custom styles as needed */
