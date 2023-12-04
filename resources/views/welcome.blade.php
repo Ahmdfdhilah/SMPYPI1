@@ -219,6 +219,7 @@
 
                                     <div class="max-w-lg mt-6 text-gray-500">
                                         <p class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">
+                                            
                                             {{$kepsek->kepsek_welcome}}
                                         </p>
                                     </div>

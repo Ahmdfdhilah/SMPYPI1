@@ -29,7 +29,7 @@
             <div class="flex items-center justify-between">
                 <a href="/berita"
                    class="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-[#FFCA00] rounded-lg hover:bg-[#FFF000]">
-                    Back to Blogs
+                    Lihat yang lain
                 </a>
     
             </div>

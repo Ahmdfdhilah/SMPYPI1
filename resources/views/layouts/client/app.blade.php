@@ -9,7 +9,9 @@
     <link rel="icon" href="/client-icon.svg" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.15.0/font/bootstrap-icons.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js" integrity="sha512-aNMyYYxdIxIaot0Y1/PLuEu3eipGCmsEUBrUq+7aVyPGMFH8z0eTP0tkqAvv34fzN6z+201d3T8HPb1svWSKHQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"
+        integrity="sha512-aNMyYYxdIxIaot0Y1/PLuEu3eipGCmsEUBrUq+7aVyPGMFH8z0eTP0tkqAvv34fzN6z+201d3T8HPb1svWSKHQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -30,12 +32,141 @@
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <!-- Open Graph untuk Media Sosial -->
     <meta property="og:title" content="Sistem Informasi Desa - SMP YPI 1 Braja Selebah, Lampung Timur">
-    <meta property="og:description" content="Deskripsi singkat dan menarik mengenai Sistem Informasi Desa SMP YPI 1 Braja Selebah, Lampung Timur.">
+    <meta property="og:description"
+        content="Deskripsi singkat dan menarik mengenai Sistem Informasi Desa SMP YPI 1 Braja Selebah, Lampung Timur.">
     <meta property="og:image" content="/path/to/og-image.jpg">
     <meta property="og:url" content="https://smpypi1brajaselebah.sch.id/">
     <meta property="og:type" content="website">
 
+    <style>
+        .loader-overlay {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgb(255, 255, 255);
+            z-index: 1000;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+            /* Allows interaction with elements behind the loader */
+        }
 
+        @layer components {
+            .loader {
+                --size: 24px;
+                --distance: 100px;
+                --xturns: 1turn;
+                --yturns: 1turn;
+                --duration: 9s;
+            }
+
+            .loader,
+            .loader::before,
+            .loader::after {
+                content: '';
+                position: absolute;
+                top: calc(50% - var(--size)*0.5);
+                left: calc(50% - var(--size)*0.5);
+                width: var(--size);
+                height: var(--size);
+                border-radius: 50%;
+                background: black;
+            }
+
+            .loader {
+                transform-style: preserve-3d;
+                animation: figure-eight var(--duration) linear infinite;
+                --xturns-neg: calc(var(--xturns) * -1);
+                --yturns-neg: calc(var(--yturns) * -1);
+            }
+
+            .loader::before,
+            .loader::after {
+                animation:
+                    figure-eight-invert var(--duration) linear infinite,
+                    figure-eight var(--duration) linear infinite;
+                animation-composition: add;
+            }
+
+            .loader::before {
+                animation-delay: 0s, calc(var(--duration) * -0.333333)
+            }
+
+            .loader::after {
+                animation-delay: 0s, calc(var(--duration) * -0.666666)
+            }
+
+            @keyframes figure-eight {
+                from {
+                    transform:
+                        rotateX(var(--xturns)) rotateY(var(--yturns)) translateZ(var(--distance)) rotateY(var(--yturns-neg)) rotateX(var(--xturns-neg))
+                }
+
+                to {
+                    transform:
+                        rotateX(var(--xturns-neg)) rotateY(var(--yturns-neg)) translateZ(var(--distance)) rotateY(var(--yturns)) rotateX(var(--xturns))
+                }
+            }
+
+            @keyframes figure-eight-invert {
+                from {
+                    transform:
+                        rotateX(var(--xturns-neg)) rotateY(var(--yturns-neg)) translateZ(var(--distance)) rotateY(var(--yturns)) rotateX(var(--xturns))
+                }
+
+                to {
+                    transform:
+                        rotateX(var(--xturns)) rotateY(var(--yturns)) translateZ(var(--distance)) rotateY(var(--yturns-neg)) rotateX(var(--xturns-neg))
+                }
+            }
+
+            @property --size {
+                syntax: "<length>";
+                inherits: true;
+                initial-value: 0px;
+            }
+
+            @property --distance {
+                syntax: "<length>";
+                inherits: true;
+                initial-value: 0px;
+            }
+
+            @property --xturns {
+                syntax: "<angle>";
+                inherits: true;
+                initial-value: 0turn;
+            }
+
+            @property --yturns {
+                syntax: "<angle>";
+                inherits: true;
+                initial-value: 0turn;
+            }
+
+            @property --xturns-neg {
+                syntax: "<angle>";
+                inherits: true;
+                initial-value: 0turn;
+            }
+
+            @property --yturns-neg {
+                syntax: "<angle>";
+                inherits: true;
+                initial-value: 0turn;
+            }
+
+            @property --duration {
+                syntax: "<time>";
+                inherits: true;
+                initial-value: 0s;
+            }
+        }
+    </style>
 </head>
 
 <body class="relative bg-gray-500 font-sans">
@@ -234,8 +365,24 @@
         </svg>
     </button>
 
+    {{-- loader --}}
+    <div id="loader-overlay" class="loader-overlay">
+        <div class="loader"></div>
+    </div>
+
+
 
     <script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script>
+    <script>
+        document.onreadystatechange = function() {
+            if (document.readyState === "complete") {
+                document.getElementById("loader-overlay").style.opacity = 0;
+                setTimeout(() => {
+                    document.getElementById("loader-overlay").style.display = "none";
+                }, 50);
+            }
+        };
+    </script>
     <script>
         window.onscroll = function() {
             scrollFunction();
