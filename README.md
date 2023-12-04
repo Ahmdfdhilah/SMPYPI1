@@ -1,7 +1,5 @@
-<h1 align="center">
-  <a href="https://smpypi1brajaselebah.sch.id">
-    <img src="https://readme-typing-svg.herokuapp.com?lines=PENGEMBANGAN+SISTEM+INFORMASI+SEKOLAH+BERBASIS+WEBSITE+MENGGUNAKAN+METODE+AGILE&center=true&width=1000&height=50" alt="Project Title">
-  </a>
+<h1 style="text-align: center; margin-bottom: 0.5em;">
+ PENGEMBANGAN SISTEM INFORMASI SEKOLAH BERBASIS WEBSITE MENGGUNAKAN METODE AGILE
 </h1>
 
 <p align="center">
