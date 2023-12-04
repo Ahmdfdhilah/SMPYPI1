@@ -1,11 +1,11 @@
 <h1 align="center"
-  <a href="https://github.com/DenverCoder1/readme-typing-svg">
+  <a href="https://smpypi1brajaselebah.sch.id">
     <img src="https://readme-typing-svg.herokuapp.com?lines=PENGEMBANGAN+SISTEM+INFORMASI+SEKOLAH+BERBASIS+WEBSITE+MENGGUNAKAN+METODE+AGILE&center=true&width=1000&height=50" alt="Project Title">
   </a>
 </h1>
 
 <p align="center">
-  <a href="https://github.com/DenverCoder1/readme-typing-svg">
+  <a href="https://smpypi1brajaselebah.sch.id">
     <img src="https://readme-typing-svg.herokuapp.com?lines=SMP+YPI+1+BRAJA+SELEBAH+Website&center=true&width=500&height=50" alt="Project Subtitle">
   </a>
 </p>
@@ -20,6 +20,8 @@
 Kami bermitra dengan Sekolah SMP ISLAM YPI 1 BRAJA SELEBAH untuk merancang website Sekolah yang bertujuan mengembangkan sistem informasi sekolah berbasis website untuk meningkatkan aksesibilitas informasi . SMP ISLAM YPI 1 BRAJA SELEBAH menghadapi kendala dalam menyediakan informasi dan layanan publik yang efektif kepada masyarakat dan siswa. Kurangnya aksesibilitas dan saluran komunikasi yang efisien dan ketidakjelasan dalam penyampaian informasi ke pihak eksternal dan internal.
 
 Untuk mengatasi masalah ini, kami bertujuan untuk merancang website Sekolah yang interaktif dan informatif, memfasilitasi akses informasi, pengumuman, layanan Sekolah, berita lokal, dan potensi sekolah seperti prestasi , galeri dokumentasi kegiatan siswa sekolah. Kami akan menggunakan pendekatan Agile dalam pengembangan sistem informasi sekolah . Pendekatan ini akan melibatkan proses iteratif, kolaborasi yang kuat dengan pihak terkait, dan fleksibilitas dalam menyesuaikan perubahan kebutuhan sistem. Melalui analisis kebutuhan, pemilihan platform, desain, pengembangan, pemeliharaan berkala, dan evaluasi berkelanjutan, kami berupaya menciptakan solusi teknologi yang akan memperkuat komunikasi antara pihak sekolah  dan siswa, masyarakat, meningkatkan transparansi, dan mempromosikan partisipasi sekolah dalam kegiatan internal maupun eksternal .
+
+kunjungi situs web resmi [SMP YPI 1 Braja Selebah](https://smpypi1brajaselebah.sch.id/).
 </p>
 
 <h2 style="text-align: center; margin-bottom: 0.5em;">Tim Pengembang</h2>
