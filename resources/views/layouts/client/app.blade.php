@@ -115,7 +115,7 @@
                                     <a href="/beasiswa"
                                         class="hover:text-[#FFF100] block px-4 py-2 {{ Route::currentRouteName() == 'beasiswa' ? 'text-white bg-[#FFF100] text-sm lg:text-[#FFF100]' : 'text-white text-sm lg:text-grey-700' }} rounded lg:bg-transparent  ">BEASISWA</a>
                                     <a href="/eskul"
-                                        class="hover:text-[#FFF100] block px-4 py-2 {{ Route::currentRouteName() == 'eskul' ? 'text-white bg-[#FFF100] text-sm lg:text-[#FFF100]' : 'text-white text-sm lg:text-grey-700' }} rounded lg:bg-transparent  ">ESKUL</a>
+                                        class="hover:text-[#FFF100] block px-4 py-2 {{ Route::currentRouteName() == 'eskul' ? 'text-white bg-[#FFF100] text-sm lg:text-[#FFF100]' : 'text-white text-sm lg:text-grey-700' }} rounded lg:bg-transparent  ">EXTRAKULIKULER</a>
                                 </div>
                             </div>
                         </li>

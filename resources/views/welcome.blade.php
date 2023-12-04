@@ -21,7 +21,7 @@
         <section class="pb-20 -mt-24">
             <div class="container mx-auto px-4">
                 <div class="flex flex-wrap">
-                    <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center guru-card">
+                    <a href="/gurustaff" class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center guru-card">
                         <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                             <div class="px-4 py-5 flex-auto">
                                 <div class="mx-auto w-fit justify-center">
@@ -37,8 +37,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="w-full md:w-4/12 px-6 text-center siswa-card">
+                    </a>
+                    <a href="/prestasi" class="w-full md:w-4/12 px-6 text-center siswa-card">
                         <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                             <div class="px-4 py-5 flex-auto">
                                 <div class="mx-auto w-fit justify-center">
@@ -55,8 +55,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center kelas-card">
+                    </a>
+                    <a href="/fasilitas" class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center kelas-card">
                         <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                             <div class="px-4 py-5 flex-auto">
                                 <div class="mx-auto w-fit justify-center">
@@ -72,7 +72,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="flex flex-wrap items-center mt-32" data-aos="fade-up" data-aos-delay="200">
                     <div class="w-full md:w-5/12 px-4 mr-auto ml-auto">
@@ -121,8 +121,8 @@
                     </div>
                     <div class="w-full container mx-auto flex flex-col gap-4 lg:gap-12 lg:flex-row pb-24">
                         @foreach ($pengumuman as $publication)
-                            <div class="w-full border-2 border-gray-300 rounded-xl publication">
-                                <img src="/image/{{ $publication->publication_img }}" class="object-cover mb-4 w-full h-48"
+                            <div class="w-full lg:w-1/3 border-2 border-gray-300 rounded-xl publication">
+                                <img src="/image/{{ $publication->publication_img }}" class="object-cover rounded-t-xl mb-4 w-full h-48"
                                     alt="Image">
                                 <div class="p-2">
                                     <p class="text-xs font-thin">{{ $publication->created_at }}</p>
@@ -151,8 +151,8 @@
                     </div>
                     <div class="w-full container mx-auto flex flex-col gap-4 lg:gap-12 lg:flex-row pb-24">
                         @foreach ($blog as $publication)
-                            <div class="w-full border-2 border-gray-300 rounded-xl publication">
-                                <img src="/image/{{ $publication->publication_img }}" class="object-cover mb-4 w-full h-48"
+                            <div class="w-full lg:w-1/3 border-2 border-gray-300 rounded-xl publication">
+                                <img src="/image/{{ $publication->publication_img }}" class="object-cover rounded-t-xl mb-4 w-full h-48"
                                     alt="Image">
                                 <div class="p-2">
                                     <p class="text-xs font-thin">{{ $publication->created_at }}</p>
@@ -171,6 +171,36 @@
                     </div>
                 </div>
             </div>
+
+            <div data-aos="fade-up" data-aos-delay="200"
+            class="flex flex-col xl:flex-row justify-between  rounded relative">
+            <div class="w-full sm:w-4/5 pt-10 mx-auto lg:mx-0">
+                <div class="m-auto pl-2 text-xl mb-2 border-s-4 border-[#FFAC00]">Our Activity</div>
+                <div class="h-fit pb-8 m-auto flex items-center text-2xl font-bold">
+                    Follow our latest activity
+                </div>
+                <div class="w-full container mx-auto flex flex-col gap-4 lg:gap-12 lg:flex-row pb-24">
+                    @foreach ($kegiatan as $publication)
+                        <div class="w-full lg:w-1/3 border-2 border-gray-300 rounded-xl publication">
+                            <img src="/image/{{ $publication->publication_img }}" class="object-cover rounded-t-xl  mb-4 w-full h-48"
+                                alt="Image">
+                            <div class="p-2">
+                                <p class="text-xs font-thin">{{ $publication->created_at }}</p>
+                                <a href="/berita/{{ $publication->id }}">
+                                    <h3 class="text-lg font-bold mb-2">{!! $publication->publication_name !!}</h3>
+                                </a>
+                                <div class="texy-md font-thin">
+                                    {!! substr($publication->publication_desc, 0, 200) !!} ...
+                                    <a href="/berita/{{ $publication->id }}" class="text-[#FFAC00]">baca
+                                        selengkapnya</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    @endforeach
+                </div>
+            </div>
+        </div>
             <div data-aos="fade-up" data-aos-delay="200"
                 class="flex flex-col-reverse lg:flex-row justify-between  rounded relative mb-48">
                 <div class="w-full sm:w-4/5">

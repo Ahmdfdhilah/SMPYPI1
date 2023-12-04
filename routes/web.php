@@ -2,7 +2,7 @@
 
 use App\Http\Controllers\Admin\KepsekController;
 use App\Http\Controllers\AuthController;
-
+use App\Http\Controllers\ContactFormController;
 use App\Http\Controllers\Client\ClientGaleriController;
 use App\Http\Controllers\Client\ClientSejarahController;
 use App\Http\Controllers\HomeController;
@@ -19,9 +19,8 @@ use App\Http\Controllers\Client\ClientFacilityController;
 use App\Http\Controllers\Client\ClientNewsController;
 use App\Http\Controllers\Client\ClientEmployeeController;
 use App\Http\Controllers\Client\ClientScholarshipController;
-use Illuminate\Support\Facades\Route; 
 use App\Http\Controllers\DashboardController;
-
+use Illuminate\Support\Facades\Route; 
 // // Home
 Route::get('/', HomeController::class)->name('home');
 
@@ -47,9 +46,9 @@ Route::get('/berita', [ClientNewsController::class, '__invoke'])->name('berita')
 Route::get('/berita/{id}', [ClientNewsController::class, 'show']);
 
 //saran
-Route::get('/saran', function(){
-    return view('saran');
-})->name('saran');
+Route::get('/saran', [ContactFormController::class, 'showForm'])->name('contact.form');
+Route::post('/saran', [ContactFormController::class, 'submitForm'])->name('contact.submit');
+
 
 
 // Auth

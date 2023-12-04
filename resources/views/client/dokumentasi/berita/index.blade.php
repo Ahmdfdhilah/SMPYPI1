@@ -39,12 +39,17 @@
                                 class="inline-flex w-full px-4 py-2 hover:bg-gray-100"
                                 name="category" value="Pengumuman">Pengumuman</button>
                         </li>
+                        <li>
+                            <button type="button"
+                                class="inline-flex w-full px-4 py-2 hover:bg-gray-100"
+                                name="category" value="Kegiatan">Kegiatan</button>
+                        </li>
                     </ul>
                 </div>
                 <div class="relative w-full">
                     <input type="search" id="search-dropdown"
                         class="block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-e-lg border-s-gray-50 border-s-2 border border-gray-300 focus:ring-blue-500 focus:border-blue-300"
-                        placeholder="Cari Blog atau Pengumuman..." name="title" required>
+                        placeholder="Cari Blog, Kegiatan ,atau Pengumuman..." name="title" required>
                     <button type="submit"
                         class="absolute top-0 end-0 p-2.5 text-sm font-medium h-full text-white bg-blue-700 rounded-e-lg border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">
                         <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"

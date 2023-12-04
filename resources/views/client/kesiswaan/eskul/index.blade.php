@@ -13,10 +13,14 @@
             <div data-aos="fade-up" class="block w-[18rem] h-[15rem] rounded-lg bg-[#FFAC00] shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
                 <div class="object-cover w-full h-full overflow-hidden relative">
                     <img class="rounded-lg w-full h-full object-cover" src="/image/{{$eskul->eskul_img}}" alt="" />
-                    <div class="rounded-b-lg absolute bottom-0 w-full bg-[#FFAC00] p-2">
-                        <p class="font-bold text-white">
-                            {{$eskul->eskul_name}}
+                    <div class="rounded-b-lg absolute bottom-0 w-full bg-white p-2">
+                        <h5 class="mb-2 text-l font-bold tracking-wide text-neutral-800">
+                            {{ $eskul->eskul_name }}
+                        </h5>
+                        <p class="mb-2 text-md text-neutral-500">
+                            {{ $eskul->eskul_desc}}
                         </p>
+
                     </div>
                 </div>
             </div>

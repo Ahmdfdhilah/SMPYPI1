@@ -10,23 +10,23 @@
         <div class="text-2xl font-bold text-[#FFAC00] py-20 lg:text-3xl">Fasilitas</div>
         <div class="flex flex-wrap justify-center lg:justify-normal gap-10 pt-12 pb-48" data-aos="fade-up" data-aos-delay="200">
             @foreach ($facilities as $facility)
-                <div class="block rounded-xl bg-white shadow-xl dark:bg-neutral-700 text-center">
+                <div class="block rounded-xl bg-white shadow-xl text-center">
                     <div>
                         <img class="rounded-t-xl object-cover w-full h-48 mt-2" src="/image/{{ $facility->facilities_img }}"
-                            alt="" />
+                            alt=""/>
                     </div>
 
                     <div class="p-6">
-                        <h5 class="mb-2 text-xl font-bold tracking-wide text-neutral-800 dark:text-neutral-50">
+                        <h5 class="mb-2 text-xl font-bold tracking-wide text-neutral-800">
                             {{ $facility->facilities_name }}
                         </h5>
-                        <p class="mb-2 text-base text-neutral-500 dark:text-neutral-300">
+                        <p class="mb-2 text-base text-neutral-500">
                             {{ $facility->facilities_desc }}
                         </p>
 
                     </div>
-                    <div class="border-t-2 border-neutral-100 px-6 py-4 dark:border-neutral-500">
-                        <h5 class="flex items-center justify-center text-neutral-500 dark:text-neutral-300">
+                    <div class="border-t-2 border-neutral-100 px-6 py-4">
+                        <h5 class="flex items-center justify-center text-neutral-500">
                             <span class="ml-2">
                                 Jumlah :
                             </span>
@@ -37,7 +37,6 @@
                        
                         </h5>
                     </div>
-
                 </div>
             @endforeach
         </div>

@@ -27,19 +27,24 @@ class HomeController extends Controller
             ->where('publication_type', 'like', "pengumuman")->latest()->take(3)->get();
         $blog = DB::table('publications')
             ->where('publication_type', 'like', "blog")->latest()->take(3)->get();
+        $kegiatan = DB::table('publications')
+            ->where('publication_type', 'like', "kegiatan")->latest()->take(3)->get();
 
-        return view('welcome', compact(
-            'achievements',
-            'eskuls',
-            'kepsek',
-            'facilities',
-            'employees',
-            'pengumuman',
-            'blog',
-            'totalStudent',
-            'totalGuru',
-            'totalKelas',
-        )
+        return view(
+            'welcome',
+            compact(
+                'achievements',
+                'eskuls',
+                'kepsek',
+                'facilities',
+                'kegiatan',
+                'employees',
+                'pengumuman',
+                'blog',
+                'totalStudent',
+                'totalGuru',
+                'totalKelas',
+            )
         );
     }
 }
