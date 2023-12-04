@@ -5,6 +5,58 @@
 ## Deskripsi
 SMP YPI 1 BRAJA SELEBAH Website adalah situs web resmi SMP YPI 1 BRAJA SELEBAH yang dikembangkan menggunakan Laravel. Situs ini menyediakan informasi terkini seputar SMP YPI 1 BRAJA SELEBAH, termasuk berita, acara, dan profil sekolah.
 
+# PENGEMBANGAN SISTEM INFORMASI SEKOLAH BERBASIS WEBSITE MENGGUNAKAN METODE AGILE
+
+## Tim Pengembang:
+1. **Ahmad Fadillah (121140173)**
+   - *Job:* Project Manager + Backend Developer
+   - *Email:* ahmad.121140173@student.itera.ac.id
+
+2. **Defin Surjaniah (121140022)**
+   - *Job:* Frontend Developer 1
+   - *Email:* defin.121140022@student.itera.ac.id
+
+3. **Ahmad Fathur Rohman (121140082)**
+   - *Job:* Frontend Developer 2
+   - *Email:* ahmad.121140082@student.itera.ac.id
+
+4. **Aisa Setia Primastuti (121140092)**
+   - *Job:* UI/UX Designer 1
+   - *Email:* aisa.121140092@student.itera.ac.id
+
+5. **Muhammad Alfarizi (121140093)**
+   - *Job:* Frontend Developer 3
+   - *Email:* muhammad.121140093@student.itera.ac.id
+
+6. **Pannes Diba Sabila (121140117)**
+   - *Job:* UI/UX Designer 2
+   - *Email:* pannes.121140117@student.itera.ac.id
+
+## Deskripsi Proyek:
+
+Proyek ini bertujuan untuk mengembangkan Sistem Informasi Sekolah berbasis website dengan menerapkan metode Agile. Studi kasus dilakukan di SMP YPI1 Braja Selebah.
+
+### Tujuan Proyek:
+
+- Meningkatkan efisiensi manajemen sekolah melalui sistem informasi yang terintegrasi.
+- Memberikan aksesibilitas yang lebih baik kepada guru, siswa, dan orang tua melalui platform web.
+- Mengoptimalkan proses pembelajaran dan administrasi sekolah.
+
+## Metode Pengembangan: Agile
+
+Metode pengembangan yang digunakan dalam proyek ini adalah Agile, yang memungkinkan adaptasi cepat terhadap perubahan dan iterasi berkala untuk memastikan keterlibatan pemangku kepentingan yaitu pengurus sekolah SMP YPI 1 BRAJA SELEBAH.
+
+## Kontak:
+
+Jika ada pertanyaan lebih lanjut atau informasi tambahan, silakan hubungi Project Manager:
+
+**Ahmad Fadillah**
+- *Email:* ahmad.121140173@student.itera.ac.id
+- *Telepon:* 089647107815
+
+---
+
+
 ## Installation
 
 Follow these steps to set up the project on your local machine:
@@ -39,43 +91,31 @@ Follow these steps to set up the project on your local machine:
     npm install
     ```
 
-6. Install Bootstrap Icons:
-
-    ```bash
-    npm i bootstrap-icons
-    ```
-
-7. Install Flowbite:
-
-    ```bash
-    npm install flowbite
-    ```
-
-8. Run database migrations:
+6. Run database migrations:
 
     ```bash
     php artisan migrate:fresh
     ```
 
-9. Generate an application key:
+7. Generate an application key:
 
     ```bash
     php artisan key:generate
     ```
 
-10. Seed the database:
+8. Seed the database:
 
     ```bash
     php artisan migrate --seed
     ```
 
-11. Compile frontend assets:
+9. Compile frontend assets:
 
     ```bash
     npm run dev
     ```
 
-12. Open a new terminal and start the Laravel development server:
+10. Open a new terminal and start the Laravel development server:
 
     ```bash
     php artisan serve
