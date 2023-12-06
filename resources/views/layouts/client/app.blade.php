@@ -302,7 +302,6 @@
 
     <!-- Footer -->
     <footer class="bg-[#434343]">
-
         <div class="container mx-auto flex flex-col md:flex-row justify-evenly px-8 lg:gap-12">
             <div class="w-full md:w-1/3 p-5">
                 <img src="/frontend/logo.png" class="h-12 mr-2 w-12" alt="Logo" />
@@ -351,7 +350,7 @@
         </div>
 
         <div class="bg-[#5A5A5A] text-center text-sm text-white p-4">
-            &copy; {{ date('Y') }} @Ahmdfdhilah. All rights reserved.
+            &copy; {{ date('Y') }} @SMP YPI 1 BRAJA SELEBAH. All rights reserved.
         </div>
 
     </footer>
