@@ -19,18 +19,21 @@
     <link rel="stylesheet" href="/lte/dist/css/adminlte.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.15.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <!-- Gunakan CDN SimpleMDE -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
+    <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
+
     <style>
         .card {
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease-in-out;
         }
-        
+
         .card:hover {
             transform: scale(1.05);
         }
-        
-        </style>
+    </style>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -112,7 +115,8 @@
                         </li>
                         <li>
                             <a href="/admin/kepsek"
-                                class="bg-[#434343] hover:text-[#FFF100] md:bg-transparent text-white text-sm rounded lg:bg-transparent lg:text-grey-700' block pl-3 pr-4 py-2 md:p-0 rounded focus:outline-none">KEPALA SEKOLAH</a>
+                                class="bg-[#434343] hover:text-[#FFF100] md:bg-transparent text-white text-sm rounded lg:bg-transparent lg:text-grey-700' block pl-3 pr-4 py-2 md:p-0 rounded focus:outline-none">KEPALA
+                                SEKOLAH</a>
                         </li>
                         <li class="flex lg:hidden">
                             <a href="/logout">
@@ -171,15 +175,18 @@
             <div class="w-full md:w-1/3 p-7 flex flex-col">
                 <h4 class="text-lg font-bold mb-2 text-[#FFF100]">Kontak</h4>
                 <div class="flex flex-col gap-2">
-                    <a href="#" class="flex text-white gap-2 items-center hover:text-[#FF0000] " title="Youtube">
+                    <a href="#" class="flex text-white gap-2 items-center hover:text-[#FF0000] "
+                        title="Youtube">
                         <i class="bi bi-youtube text-3xl"></i>
                         <div class="text-s font-thin ">youtube</div>
                     </a>
-                    <a href="#" class="flex text-white gap-2 items-center hover:text-[#E4405F]" title="Instagram">
+                    <a href="#" class="flex text-white gap-2 items-center hover:text-[#E4405F]"
+                        title="Instagram">
                         <i class="bi bi-instagram text-2xl"></i>
                         <div class="text-s font-thin ">insta</div>
                     </a>
-                    <a href="#" class="flex text-white gap-2 items-center hover:text-[#25D366]" title="WhatsApp">
+                    <a href="#" class="flex text-white gap-2 items-center hover:text-[#25D366]"
+                        title="WhatsApp">
                         <i class="bi bi-whatsapp  text-2xl"></i>
                         <div class="text-s font-thin ">+6285658982299</div>
                     </a>

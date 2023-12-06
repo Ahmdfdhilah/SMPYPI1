@@ -47,4 +47,12 @@
   
 </div>
 
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+      document.getElementById('publication_desc').addEventListener('input', function () {
+          this.value = this.value.replace(/\n/g, '<br>');
+      });
+  });
+</script>
+
 @endsection

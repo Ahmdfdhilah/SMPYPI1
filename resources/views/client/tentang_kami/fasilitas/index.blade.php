@@ -10,7 +10,7 @@
         <div class="text-2xl font-bold text-[#FFAC00] py-20 lg:text-3xl">Fasilitas</div>
         <div class="flex flex-wrap justify-center lg:justify-normal gap-10 pt-12 pb-48" data-aos="fade-up" data-aos-delay="200">
             @foreach ($facilities as $facility)
-                <div class="block rounded-xl bg-white shadow-xl text-center">
+                <div class="block rounded-xl w-full lg:w-[30%] bg-white shadow-xl text-center">
                     <div>
                         <img class="rounded-t-xl object-cover w-full h-48 mt-2" src="/image/{{ $facility->facilities_img }}"
                             alt=""/>
