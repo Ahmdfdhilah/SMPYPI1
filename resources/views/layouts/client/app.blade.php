@@ -276,16 +276,16 @@
                     </ul>
                 </div>
                 <div class="items-center space-x-4 hidden lg:flex">
-                    <a href="#" class="text-white hover:text-[#FF0000] text-3xl" title="Facebook">
+                    <a href="https://www.youtube.com/@spysamediaofficial1151" class="text-white hover:text-[#FF0000] text-3xl" title="Facebook">
                         <i class="bi bi-youtube"></i>
                     </a>
-                    <a href="#" class="text-white hover:text-[#E4405F] text-2xl" title="Instagram">
+                    <a href="https://www.instagram.com/smpypi1brasel_lpg/" class="text-white hover:text-[#E4405F] text-2xl" title="Instagram">
                         <i class="bi bi-instagram"></i>
                     </a>
-                    <a href="#" class="text-white hover:text-[#25D366] text-2xl" title="WhatsApp">
+                    <a href="https://wa.me/6285658982299" class="text-white hover:text-[#25D366] text-2xl" title="WhatsApp">
                         <i class="bi bi-whatsapp"></i>
                     </a>
-                    <a href="#" class="text-white hover:text-[#1877F2] text-2xl" title="Facebook">
+                    <a href="https://www.facebook.com/smpislamypi1brajaselebah/?locale=id_ID" class="text-white hover:text-[#1877F2] text-2xl" title="Facebook">
                         <i class="bi bi-facebook"></i>
                     </a>
                 </div>
@@ -326,25 +326,25 @@
             <div class="w-full md:w-1/3 p-7 flex flex-col">
                 <h4 class="text-lg font-bold mb-2 text-[#FFF100]">Kontak</h4>
                 <div class="flex flex-col gap-2">
-                    <a href="#" class="flex text-white gap-2 items-center hover:text-[#FF0000] "
+                    <a href="https://www.youtube.com/@spysamediaofficial1151" class="flex text-white gap-2 items-center hover:text-[#FF0000] "
                         title="Youtube">
                         <i class="bi bi-youtube text-3xl"></i>
-                        <div class="text-s font-thin ">youtube</div>
+                        <div class="text-s font-thin ">SPYSA Media Official</div>
                     </a>
-                    <a href="#" class="flex text-white gap-2 items-center hover:text-[#E4405F]"
+                    <a href="https://www.instagram.com/smpypi1brasel_lpg/" class="flex text-white gap-2 items-center hover:text-[#E4405F]"
                         title="Instagram">
                         <i class="bi bi-instagram text-2xl"></i>
-                        <div class="text-s font-thin ">insta</div>
+                        <div class="text-s font-thin ">smpypi1brasel_lpg</div>
                     </a>
-                    <a href="#" class="flex text-white gap-2 items-center hover:text-[#25D366]"
+                    <a href="https://wa.me/6285658982299" class="flex text-white gap-2 items-center hover:text-[#25D366]"
                         title="WhatsApp">
                         <i class="bi bi-whatsapp  text-2xl"></i>
                         <div class="text-s font-thin ">+6285658982299</div>
                     </a>
-                    <a href="#" class="flex text-white gap-2 items-center hover:text-[#1877F2]"
+                    <a href="https://www.facebook.com/smpislamypi1brajaselebah/?locale=id_ID" class="flex text-white gap-2 items-center hover:text-[#1877F2]"
                         title="Facebook">
                         <i class="bi bi-facebook text-2xl"></i>
-                        <div class="text-s font-thin ">facebook</div>
+                        <div class="text-s font-thin ">SMP Islam YPI 1 Braja Selebah</div>
                     </a>
                 </div>
             </div>
