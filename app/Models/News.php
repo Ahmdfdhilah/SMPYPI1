@@ -11,6 +11,6 @@ class News extends Model
     protected $guarded = ['id'];
     protected $table = 'publications';
     protected $fillable = [
-        'publication_name','publication_type', 'publication_desc', 'publication_img'
+        'publication_name','publication_type', 'publication_desc', 'publication_img', 'publication_link'
     ];
 }

@@ -22,6 +22,7 @@
           <th>Judul</th>
           <th>Deskripsi</th>
           <th>Tipe</th>
+          <th>Link</th>
           <th>Gambar</th>
           <th>Aksi</th>
         </tr>
@@ -36,6 +37,7 @@
             <td>{{$data->publication_name}}</td>
             <td>{{$data->publication_desc}}</td>
             <td>{{$data->publication_type}}</td>
+            <td>{{$data->publication_link}}</td>
             <td>
               <img src="/image/{{$data->publication_img}}" class="img-fluid" alt="" width="90">
             </td>

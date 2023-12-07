@@ -26,6 +26,13 @@
         <small style="color: red;">{{$message}}</small>
         @enderror
         <div class="form-group">
+          <label for="">Link</label>
+          <input name="publication_link" id="" cols="30" rows="10" class="form-control" placeholder="Link" value="{{$news->publication_link}}">
+        </div>
+        @error('publication_link')
+        <small style="color: red;">{{$message}}</small>
+        @enderror
+        <div class="form-group">
           <label for="">Tipe</label>
           <input name="publication_type" id="" cols="30" rows="10" class="form-control" placeholder="Tipe" value="{{$news->publication_type}}">
         </div>

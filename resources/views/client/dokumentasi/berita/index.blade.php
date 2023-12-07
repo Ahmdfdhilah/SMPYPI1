@@ -67,7 +67,7 @@
             @forelse ($publications as $publication)
                 <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow"
                     data-aos="fade-up" data-aos-delay="{{ $loop->index * 50 }}">
-                    <a href="#">
+                    <a href="/berita/{{ $publication->id }}">
                         <img class="rounded-t-lg object-cover w-full h-48"
                             src="/image/{{ $publication->publication_img }}" alt="" />
                     </a>

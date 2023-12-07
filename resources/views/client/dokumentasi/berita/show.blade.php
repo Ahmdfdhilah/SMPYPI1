@@ -9,9 +9,15 @@
         </div>
 
         <div class="max-w-2xl mx-auto px-4 py-8">
-
-            <img src="/image/{{ $publication->publication_img }}" alt="{{ $publication->publication_title }}"
-                class="w-full h-64 object-cover mb-6 rounded-lg">
+            @if ($publication->publication_link)
+                <a href="{{ $publication->publication_link }}">
+                    <img src="/image/{{ $publication->publication_img }}" alt="{{ $publication->publication_title }}"
+                        class="w-full h-64 object-cover mb-6 rounded-lg">
+                </a>
+            @else
+                <img src="/image/{{ $publication->publication_img }}" alt="{{ $publication->publication_title }}"
+                    class="w-full h-64 object-cover mb-6 rounded-lg">
+            @endif
 
             <h1 class="text-3xl font-semibold mb-4">{{ $publication->publication_title }}</h1>
 

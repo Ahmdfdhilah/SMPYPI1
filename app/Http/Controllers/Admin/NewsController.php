@@ -33,6 +33,7 @@ class NewsController extends Controller
     {
         $request->validate([
             'publication_name' => 'required',
+            'publication_link' => '',
             'publication_desc' => 'required',
             'publication_type' => 'required',
             'publication_img' => 'required|image'
@@ -76,6 +77,7 @@ class NewsController extends Controller
         $request->validate([
             'publication_name' => 'required',
             'publication_desc' => 'required',
+            'publication_link' => '',
             'publication_type' => 'required',
             'publication_img' => 'image'
         ]);

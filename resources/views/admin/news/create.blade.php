@@ -1,3 +1,6 @@
+<!-- Include the TinyMCE library -->
+<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+
 @extends('layouts.admin.app')
 
 @section('title', 'Data Publikasi')
@@ -25,6 +28,13 @@
         <small style="color: red;">{{$message}}</small>
         @enderror
         <div class="form-group">
+          <label for="">Link (jika perlu)</label>
+          <input type="text" class="form-control" name="publication_link" placeholder="Link">
+        </div>
+        @error('publication_link')
+        <small style="color: red;">{{$message}}</small>
+        @enderror
+        <div class="form-group">
           <label for="">Tipe</label>
           <input name="publication_type" id="" cols="30" rows="10" class="form-control" placeholder="Tipe" >
         </div>
@@ -46,13 +56,5 @@
   </div>
   
 </div>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-      document.getElementById('publication_desc').addEventListener('input', function () {
-          this.value = this.value.replace(/\n/g, '<br>');
-      });
-  });
-</script>
 
 @endsection

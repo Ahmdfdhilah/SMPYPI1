@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('publication_name');
             $table->string('publication_type');
             $table->text('publication_desc');
+            $table->string('publication_link')->nullable();
             $table->string('publication_img');
             $table->timestamps();
         });

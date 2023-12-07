@@ -22,7 +22,6 @@
     <!-- Gunakan CDN SimpleMDE -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
     <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
-
     <style>
         .card {
             border-radius: 10px;
@@ -135,6 +134,9 @@
                             Keluar
                         </button>
                     </a>
+                    <a href="https://onlinehtmleditor.dev/" target="_blank">
+                        <button class="inline-block rounded-full bg-blue-500 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3355a9] transition duration-150 ease-in-out hover:bg-blue-600 hover:shadow-[0_8px_9px_-4px_rgba(51,85,169,0.3),0_4px_18px_0_rgba(51,85,169,0.2)] focus:bg-blue-600 focus:shadow-[0_8px_9px_-4px_rgba(51,85,169,0.3),0_4px_18px_0_rgba(51,85,169,0.2)] focus:outline-none focus:ring-0 active:bg-blue-700 active:shadow-[0_8px_9px_-4px_rgba(51,85,169,0.3),0_4px_18px_0_rgba(51,85,169,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(51,85,169,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(51,85,169,0.2),0_4px_18px_0_rgba(51,85,169,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(51,85,169,0.2),0_4px_18px_0_rgba(51,85,169,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(51,85,169,0.2),0_4px_18px_0_rgba(51,85,169,0.1)]">TEXT EDIT</button>
+                    </a>
                 </div>
             </div>
         </nav>
@@ -174,23 +176,23 @@
             <div class="w-full md:w-1/3 p-7 flex flex-col">
                 <h4 class="text-lg font-bold mb-2 text-[#FFF100]">Kontak</h4>
                 <div class="flex flex-col gap-2">
-                    <a href="https://www.youtube.com/@spysamediaofficial1151" class="flex text-white gap-2 items-center hover:text-[#FF0000] "
-                        title="Youtube">
+                    <a href="https://www.youtube.com/@spysamediaofficial1151"
+                        class="flex text-white gap-2 items-center hover:text-[#FF0000] " title="Youtube">
                         <i class="bi bi-youtube text-3xl"></i>
                         <div class="text-s font-thin ">SPYSA Media Official</div>
                     </a>
-                    <a href="https://www.instagram.com/smpypi1brasel_lpg/" class="flex text-white gap-2 items-center hover:text-[#E4405F]"
-                        title="Instagram">
+                    <a href="https://www.instagram.com/smpypi1brasel_lpg/"
+                        class="flex text-white gap-2 items-center hover:text-[#E4405F]" title="Instagram">
                         <i class="bi bi-instagram text-2xl"></i>
                         <div class="text-s font-thin ">smpypi1brasel_lpg</div>
                     </a>
-                    <a href="https://wa.me/6285658982299" class="flex text-white gap-2 items-center hover:text-[#25D366]"
-                        title="WhatsApp">
+                    <a href="https://wa.me/6285658982299"
+                        class="flex text-white gap-2 items-center hover:text-[#25D366]" title="WhatsApp">
                         <i class="bi bi-whatsapp  text-2xl"></i>
                         <div class="text-s font-thin ">+6285658982299</div>
                     </a>
-                    <a href="https://www.facebook.com/smpislamypi1brajaselebah/?locale=id_ID" class="flex text-white gap-2 items-center hover:text-[#1877F2]"
-                        title="Facebook">
+                    <a href="https://www.facebook.com/smpislamypi1brajaselebah/?locale=id_ID"
+                        class="flex text-white gap-2 items-center hover:text-[#1877F2]" title="Facebook">
                         <i class="bi bi-facebook text-2xl"></i>
                         <div class="text-s font-thin ">SMP Islam YPI 1 Braja Selebah</div>
                     </a>
